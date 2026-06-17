@@ -1,4 +1,16 @@
 <footer class="site-footer">
+  <section class="footer-subscribe">
+    <div>
+      <h2>دریافت تازه‌ها</h2>
+      <p>برای دریافت خبرهای تازه و رویدادهای بعدی ایمیل خود را وارد کنید.</p>
+    </div>
+    <form class="footer-subscribe-form" action="#" method="post">
+      <label class="footer-subscribe-label" for="footer-email">ایمیل</label>
+      <input id="footer-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="email@example.com">
+      <button type="submit">عضویت</button>
+    </form>
+  </section>
+
   <section class="footer-main">
     <div class="footer-columns">
       <nav class="footer-column">
@@ -28,7 +40,7 @@
     </div>
 
     <div class="footer-brand">
-      <div class="footer-logo-placeholder" aria-hidden="true"></div>
+      <img class="footer-logo" src="{{ "media/tehlugLogo.png" | relURL }}" alt="تهلاگ" width="128" height="48">
     </div>
   </section>
 
