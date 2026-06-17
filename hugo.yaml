@@ -1,0 +1,6 @@
+baseURL: "https://example.org/"
+languageCode: "fa-ir"
+title: "Site Title"
+disableKinds:
+  - taxonomy
+  - term
