@@ -1,6 +1,8 @@
-baseURL: "https://example.org/"
-languageCode: "fa-ir"
+baseURL: "https://www.tehlug.org/"
+locale: "fa-ir"
 title: "Site Title"
+defaultContentLanguage: "fa"
+relativeURLs: true
 disableKinds:
   - taxonomy
   - term
