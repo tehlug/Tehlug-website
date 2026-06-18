@@ -152,37 +152,244 @@ a {
   color: var(--color-primary-text);
 }
 
-.home-temp-section {
+.home-hero {
+  width: 100%;
+  min-height: 37rem;
+  display: grid;
+  align-items: center;
+  background:
+    linear-gradient(270deg, rgba(255, 255, 255, 0.96) 0, rgba(255, 255, 255, 0.82) 47%, rgba(255, 255, 255, 0.44) 100%),
+    linear-gradient(145deg, rgba(38, 52, 73, 0.12), rgba(100, 116, 139, 0.08)),
+    var(--color-subtle);
+  padding-block: 4.75rem 4rem;
+}
+
+.home-hero-content {
   width: 100%;
   max-width: var(--site-content-width);
-  min-height: clamp(16rem, 45vh, 24rem);
-  display: grid;
-  place-items: center;
+  min-width: 0;
   margin-inline: auto;
   padding-inline: var(--site-space-md);
-  padding-block: clamp(3rem, 8vw, 5rem);
 }
 
-.home-temp-content {
-  width: 100%;
-  max-width: 36rem;
-  min-width: 0;
-  text-align: center;
-}
-
-.home-temp-content h1 {
+.home-hero-content h1 {
+  max-width: 42rem;
   margin: 0 0 var(--site-space-md);
   color: var(--color-text);
-  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: 3.65rem;
   line-height: 1.2;
+  letter-spacing: 0;
 }
 
-.home-temp-content p {
+.home-hero-content > p {
+  max-width: 40rem;
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 1.08rem;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+
+.home-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--site-space-sm);
+  margin-block-start: var(--site-space-xl);
+}
+
+.button {
+  min-height: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+  padding: 0.75rem 1.3rem;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 220ms ease,
+    transform 220ms ease;
+}
+
+.button:hover,
+.button:focus {
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.button-primary {
+  background: var(--color-primary);
+  box-shadow: 0 12px 28px rgba(38, 52, 73, 0.18);
+  color: var(--color-primary-text);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+  background: #1f2b3d;
+  box-shadow: 0 16px 34px rgba(38, 52, 73, 0.22);
+}
+
+.button-secondary {
+  border-color: var(--color-border-strong);
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--color-text);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+
+  .button:hover,
+  .button:focus,
+  .button:active {
+    transform: none;
+  }
+}
+
+.home-about {
+  border-block: 1px solid var(--color-border);
+  background:
+    linear-gradient(180deg, var(--color-surface) 0, var(--color-subtle) 100%);
+}
+
+.home-about-content {
+  width: 100%;
+  max-width: var(--site-content-width);
+  display: grid;
+  grid-template-columns: minmax(17rem, 0.85fr) minmax(0, 1.15fr);
+  align-items: start;
+  gap: clamp(2rem, 6vw, 4rem);
+  margin-inline: auto;
+  padding: 4.5rem var(--site-space-md);
+}
+
+.home-about-content > div,
+.home-about-body {
+  min-width: 0;
+}
+
+.home-about-heading {
+  position: sticky;
+  top: var(--site-space-lg);
+}
+
+.home-about-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-surface);
+  margin-block-end: var(--site-space-sm);
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.4;
+  padding-inline: 0.8rem;
+}
+
+.home-about h2 {
+  margin: 0;
+  color: var(--color-text);
+  font-size: 2rem;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+.home-about-body {
+  display: grid;
+  gap: var(--site-space-xl);
+}
+
+.home-about-body p {
   margin: 0;
   color: var(--color-muted);
   font-size: 1rem;
-  line-height: 1.9;
+  line-height: 1.95;
   overflow-wrap: anywhere;
+}
+
+.home-about-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--site-space-sm);
+}
+
+.home-about-links a {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--site-space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow-soft);
+  padding: var(--site-space-md);
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.home-about-link-icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  display: block;
+  opacity: 0.72;
+  filter: grayscale(1);
+}
+
+.home-about-links a:hover,
+.home-about-links a:focus {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+  transform: translateY(-2px);
+}
+
+.home-about-links strong,
+.home-about-links small {
+  display: block;
+}
+
+.home-about-links strong {
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.home-about-links small {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.home-about-readmore {
+  color: var(--color-primary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.home-about-readmore:hover,
+.home-about-readmore:focus {
+  color: var(--color-text);
 }
 
 .site-footer {
@@ -392,6 +599,36 @@ a {
 }
 
 @media (max-width: 48rem) {
+  .home-hero {
+    min-height: auto;
+    padding-block: 3.5rem;
+  }
+
+  .home-hero-content {
+    max-width: none;
+  }
+
+  .home-hero-content h1 {
+    font-size: 2.65rem;
+  }
+
+  .home-about-content {
+    grid-template-columns: 1fr;
+    gap: var(--site-space-lg);
+  }
+
+  .home-about-heading {
+    position: static;
+  }
+
+  .home-about h2 {
+    font-size: 1.7rem;
+  }
+
+  .home-about-links {
+    grid-template-columns: 1fr;
+  }
+
   .site-brandbar {
     min-height: auto;
     gap: var(--site-space-md);
@@ -508,11 +745,38 @@ a {
   }
 
   .site-nav-inner,
-  .home-temp-section,
+  .home-hero,
+  .home-about-content,
   .footer-main,
   .footer-subscribe,
   .footer-bottom {
     padding-inline: var(--site-space-sm);
+  }
+
+  .home-hero {
+    padding-block: 2.75rem;
+  }
+
+  .home-hero-content {
+    padding-inline: var(--site-space-sm);
+  }
+
+  .home-hero-content h1 {
+    font-size: 2.15rem;
+    line-height: 1.3;
+  }
+
+  .home-hero-content > p {
+    font-size: 1rem;
+  }
+
+  .home-hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .home-about-content {
+    padding-block: 2.5rem;
   }
 
   .site-logo img {

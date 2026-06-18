@@ -1,8 +1,51 @@
 {{ define "main" }}
-  <section class="home-temp-section">
-    <div class="home-temp-content">
-      <h1>تهلاگ</h1>
-      <p>این بخش به‌صورت موقت برای صفحه اصلی قرار گرفته است.</p>
+  <section class="home-hero">
+    <div class="home-hero-content">
+      <h1>تهلاگ؛ گروه کاربران گنو/لینوکس تهران</h1>
+      <p>
+        گردهمایی جامعه لینوکس و نرم‌افزار آزاد تهران برای یادگیری، گفتگو و اشتراک تجربه
+      </p>
+      <div class="home-hero-actions">
+        <a class="button button-primary" href="{{ "calendar/" | relURL }}">ثبت‌نام جلسه بعدی</a>
+        <a class="button button-secondary" href="{{ "about-tehlug/" | relURL }}">درباره تهلاگ</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-about" aria-labelledby="home-about-title">
+    <div class="home-about-content">
+      <div class="home-about-heading">
+        <span class="home-about-label">درباره تهلاگ</span>
+        <h2 id="home-about-title">جامعه‌ای برای کاربران لینوکس و علاقمندان نرم‌افزار آزاد</h2>
+      </div>
+      <div class="home-about-body">
+        <p>
+تهلاگ، یا گروه کاربران گنو/لینوکس تهران، جمعی مستقل از کاربران و علاقه‌مندان نرم‌افزار آزاد در تهران است. محور اصلی جلسه‌ها نرم‌افزار آزاد است؛ شرکت در جلسات این گروه برای عموم آزاد است. شما نیز چنانچه علاقه‌مند هستید میتوانید در جلسات آن شرکت کنید و دانش خود را با سایر اعضا به اشتراک گذاشته و یا از دانش آنان استفاده کنید.           <a class="home-about-readmore" href="{{ "about-tehlug/" | relURL }}">بیشتر بخوانید</a>
+        </p>
+        <div class="home-about-links">
+          <a href="https://t.me/TehlugGp">
+            <img class="home-about-link-icon" src="{{ "assets/icons/telegram.svg" | relURL }}" alt="" width="24" height="24">
+            <span>
+              <strong>تلگرام</strong>
+              <small>گفتگو با جامعه</small>
+            </span>
+          </a>
+          <a href="{{ "calendar/" | relURL }}">
+            <img class="home-about-link-icon" src="{{ "assets/icons/calendar.svg" | relURL }}" alt="" width="24" height="24">
+            <span>
+              <strong>تقویم</strong>
+              <small>جلسه‌های آینده</small>
+            </span>
+          </a>
+          <a href="https://github.com/tehlug">
+            <img class="home-about-link-icon" src="{{ "assets/icons/github.svg" | relURL }}" alt="" width="24" height="24">
+            <span>
+              <strong>گیتهاب</strong>
+              <small>پروژه‌های متن باز</small>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 {{ end }}
