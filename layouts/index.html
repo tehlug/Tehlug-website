@@ -1,13 +1,63 @@
 {{ define "main" }}
-  <section class="home-hero">
-    <div class="home-hero-content">
-      <h1>تهلاگ؛ گروه کاربران گنو/لینوکس تهران</h1>
-      <p>
-        گردهمایی جامعه لینوکس و نرم‌افزار آزاد تهران برای یادگیری، گفتگو و اشتراک تجربه
-      </p>
-      <div class="home-hero-actions">
-        <a class="button button-primary" href="{{ "calendar/" | relURL }}">ثبت‌نام جلسه بعدی</a>
-        <a class="button button-secondary" href="{{ "about-tehlug/" | relURL }}">درباره تهلاگ</a>
+  <section class="home-hero" aria-label="رویداد تهران‌لاگ">
+    <div class="home-hero-grid">
+      <aside class="home-event-aside" aria-label="معرفی و موضوعات رویداد">
+        <article class="home-event-description">
+          <p>
+            رویداد ۲۷۹ جامعه نرم‌افزار آزاد تهران (تهلاگ) با حمایت نوبیتکس و افراساپ، روز پنجشنبه ۲۵ اردیبهشت، از ساعت ۱۲ تا ۱۸ در دانشگاه صنعتی امیرکبیر برگزار می‌شود. این گردهمایی با ظرفیت ۴۰۰ نفر، فرصتی ارزشمند برای علاقه‌مندان به دنیای متن‌باز، نرم‌افزار آزاد و لینوکس است تا با همفکران خود دیدار و تبادل دانش داشته باشند.
+            ارائه‌ها و گفتگوها به‌گونه‌ای برنامه‌ریزی شده‌اند که موضوعات روز دنیای فناوری و مسائل فنی مرتبط با جوامع متن‌باز را پوشش دهند. حضور در این رویداد، گامی مهم برای به‌روز نگه‌داشتن دانش، یادگیری تجربیات واقعی و تعامل مستقیم با متخصصان و فعالان این حوزه خواهد بود.
+          </p>
+        </article>
+
+        <section class="home-event-topics" aria-label="موضوعات رویداد">
+          <div class="home-event-topics-heading">
+            <span aria-hidden="true"></span>
+            <h2>موضوعات</h2>
+          </div>
+          <div class="home-event-tags">
+            <span>Cloud</span>
+            <span>BSD</span>
+            <span>NPM</span>
+            <span>Rust</span>
+            <span>Devops</span>
+            <span>Rust</span>
+            <span>Devops</span>
+          </div>
+        </section>
+      </aside>
+
+      <div class="home-event-main">
+        <figure class="home-event-poster">
+          <img src="{{ "media/event-post-v1-1-gallery.jpg" | relURL }}" alt="پوستر رویداد تهران‌لاگ">
+        </figure>
+
+        <div class="home-event-info" aria-label="زمان و مکان رویداد">
+          <div class="home-event-info-badge">
+            <span>برگزار شده</span>
+          </div>
+          <dl class="home-event-info-list">
+            <div class="home-event-info-item">
+              <dt>تاریخ</dt>
+              <img class="home-event-info-icon" src="{{ "assets/icons/calendar.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
+              <dd>پنجشنبه ۲۵ اردیبهشت ۱۴۰۴</dd>
+            </div>
+            <div class="home-event-info-item">
+              <dt>مکان</dt>
+              <img class="home-event-info-icon" src="{{ "assets/icons/map-location.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
+              <dd>تهران - دانشگاه امیرکبیر</dd>
+            </div>
+            <div class="home-event-info-item">
+              <dt>زمان</dt>
+              <img class="home-event-info-icon" src="{{ "assets/icons/duration-alt.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
+              <dd>۱۱:۳۰ تا ۱۷:۳۰</dd>
+            </div>
+            <div class="home-event-info-item">
+              <dt>نشانی</dt>
+              <img class="home-event-info-icon" src="{{ "assets/icons/map-location-track.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
+              <dd>تهران، میدان ولیعصر، خیابان حافظ، پلاک ۳۵۰، دانشگاه امیرکبیر</dd>
+            </div>
+          </dl>
+        </div>
       </div>
     </div>
   </section>
