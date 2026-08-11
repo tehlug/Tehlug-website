@@ -1,0 +1,636 @@
+items:
+  - name: "تهران‌لاگ"
+    source_url: "https://tehlug.org/topics/index.xml\" title=تهران‌لاگ><meta property=\"og:url\" content=\"http:/tehlug.org/topics/"
+  - name: "اخبار:
+۱۶"
+    source_url: "https://tehlug.org/topics/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1/"
+  - name: "هماهنگی جلسات:
+۱۳"
+    source_url: "https://tehlug.org/topics/%D9%87%D9%85%D8%A7%D9%87%D9%86%DA%AF%DB%8C-%D8%AC%D9%84%D8%B3%D8%A7%D8%AA/"
+  - name: "نرم‌افزار آزاد:
+۱۲"
+    source_url: "https://tehlug.org/topics/%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF/"
+  - name: "python:
+۹"
+    source_url: "https://tehlug.org/topics/python/"
+  - name: "devops:
+۶"
+    source_url: "https://tehlug.org/topics/devops/"
+  - name: "js:
+۶"
+    source_url: "https://tehlug.org/topics/js/"
+  - name: "مهندسی نرم‌افزار:
+۶"
+    source_url: "https://tehlug.org/topics/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/"
+  - name: "kubernetes:
+۵"
+    source_url: "https://tehlug.org/topics/kubernetes/"
+  - name: "version control:
+۵"
+    source_url: "https://tehlug.org/topics/version-control/"
+  - name: "kernel:
+۴"
+    source_url: "https://tehlug.org/topics/kernel/"
+  - name: "linux:
+۴"
+    source_url: "https://tehlug.org/topics/linux/"
+  - name: "ایران تاکس:
+۴"
+    source_url: "https://tehlug.org/topics/%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%AA%D8%A7%DA%A9%D8%B3/"
+  - name: "حقوقی:
+۴"
+    source_url: "https://tehlug.org/topics/%D8%AD%D9%82%D9%88%D9%82%DB%8C/"
+  - name: "api:
+۳"
+    source_url: "https://tehlug.org/topics/api/"
+  - name: "gnu/linux:
+۳"
+    source_url: "https://tehlug.org/topics/gnu/linux/"
+  - name: "go:
+۳"
+    source_url: "https://tehlug.org/topics/go/"
+  - name: "news:
+۳"
+    source_url: "https://tehlug.org/topics/news/"
+  - name: "اساسنامه:
+۳"
+    source_url: "https://tehlug.org/topics/%D8%A7%D8%B3%D8%A7%D8%B3%D9%86%D8%A7%D9%85%D9%87/"
+  - name: "امنیت:
+۳"
+    source_url: "https://tehlug.org/topics/%D8%A7%D9%85%D9%86%DB%8C%D8%AA/"
+  - name: "برنامه نویسی:
+۳"
+    source_url: "https://tehlug.org/topics/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/"
+  - name: "سلام دنیا:
+۳"
+    source_url: "https://tehlug.org/topics/%D8%B3%D9%84%D8%A7%D9%85-%D8%AF%D9%86%DB%8C%D8%A7/"
+  - name: "akka:
+۲"
+    source_url: "https://tehlug.org/topics/akka/"
+  - name: "android:
+۲"
+    source_url: "https://tehlug.org/topics/android/"
+  - name: "bitcoin:
+۲"
+    source_url: "https://tehlug.org/topics/bitcoin/"
+  - name: "ci/cd:
+۲"
+    source_url: "https://tehlug.org/topics/ci/cd/"
+  - name: "cloud:
+۲"
+    source_url: "https://tehlug.org/topics/cloud/"
+  - name: "compiler:
+۲"
+    source_url: "https://tehlug.org/topics/compiler/"
+  - name: "event driven:
+۲"
+    source_url: "https://tehlug.org/topics/event-driven/"
+  - name: "fedora:
+۲"
+    source_url: "https://tehlug.org/topics/fedora/"
+  - name: "font:
+۲"
+    source_url: "https://tehlug.org/topics/font/"
+  - name: "gnome:
+۲"
+    source_url: "https://tehlug.org/topics/gnome/"
+  - name: "internationalization/localization:
+۲"
+    source_url: "https://tehlug.org/topics/internationalization/localization/"
+  - name: "log:
+۲"
+    source_url: "https://tehlug.org/topics/log/"
+  - name: "php:
+۲"
+    source_url: "https://tehlug.org/topics/php/"
+  - name: "ruby:
+۲"
+    source_url: "https://tehlug.org/topics/ruby/"
+  - name: "rust:
+۲"
+    source_url: "https://tehlug.org/topics/rust/"
+  - name: "scala:
+۲"
+    source_url: "https://tehlug.org/topics/scala/"
+  - name: "secure coding:
+۲"
+    source_url: "https://tehlug.org/topics/secure-coding/"
+  - name: "uefi:
+۲"
+    source_url: "https://tehlug.org/topics/uefi/"
+  - name: "استارتاپ:
+۲"
+    source_url: "https://tehlug.org/topics/%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE/"
+  - name: "تولید محتوا:
+۲"
+    source_url: "https://tehlug.org/topics/%D8%AA%D9%88%D9%84%DB%8C%D8%AF-%D9%85%D8%AD%D8%AA%D9%88%D8%A7/"
+  - name: "دورهمی:
+۲"
+    source_url: "https://tehlug.org/topics/%D8%AF%D9%88%D8%B1%D9%87%D9%85%DB%8C/"
+  - name: "رفع اشکال:
+۲"
+    source_url: "https://tehlug.org/topics/%D8%B1%D9%81%D8%B9-%D8%A7%D8%B4%DA%A9%D8%A7%D9%84/"
+  - name: "پتنت:
+۲"
+    source_url: "https://tehlug.org/topics/%D9%BE%D8%AA%D9%86%D8%AA/"
+  - name: "کارگاه نصب:
+۲"
+    source_url: "https://tehlug.org/topics/%DA%A9%D8%A7%D8%B1%DA%AF%D8%A7%D9%87-%D9%86%D8%B5%D8%A8/"
+  - name: "ai:
+۱"
+    source_url: "https://tehlug.org/topics/ai/"
+  - name: "ai agent:
+۱"
+    source_url: "https://tehlug.org/topics/ai-agent/"
+  - name: "anonymous group:
+۱"
+    source_url: "https://tehlug.org/topics/anonymous-group/"
+  - name: "apache:
+۱"
+    source_url: "https://tehlug.org/topics/apache/"
+  - name: "app:
+۱"
+    source_url: "https://tehlug.org/topics/app/"
+  - name: "arduino:
+۱"
+    source_url: "https://tehlug.org/topics/arduino/"
+  - name: "arm:
+۱"
+    source_url: "https://tehlug.org/topics/arm/"
+  - name: "asp.net core:
+۱"
+    source_url: "https://tehlug.org/topics/asp.net-core/"
+  - name: "aws:
+۱"
+    source_url: "https://tehlug.org/topics/aws/"
+  - name: "bash:
+۱"
+    source_url: "https://tehlug.org/topics/bash/"
+  - name: "bash scripting:
+۱"
+    source_url: "https://tehlug.org/topics/bash-scripting/"
+  - name: "big data:
+۱"
+    source_url: "https://tehlug.org/topics/big-data/"
+  - name: "bootstrap:
+۱"
+    source_url: "https://tehlug.org/topics/bootstrap/"
+  - name: "bpms:
+۱"
+    source_url: "https://tehlug.org/topics/bpms/"
+  - name: "bsd:
+۱"
+    source_url: "https://tehlug.org/topics/bsd/"
+  - name: "buildroot:
+۱"
+    source_url: "https://tehlug.org/topics/buildroot/"
+  - name: "cdn:
+۱"
+    source_url: "https://tehlug.org/topics/cdn/"
+  - name: "chakra:
+۱"
+    source_url: "https://tehlug.org/topics/chakra/"
+  - name: "coding:
+۱"
+    source_url: "https://tehlug.org/topics/coding/"
+  - name: "community:
+۱"
+    source_url: "https://tehlug.org/topics/community/"
+  - name: "copy right:
+۱"
+    source_url: "https://tehlug.org/topics/copy-right/"
+  - name: "coreos:
+۱"
+    source_url: "https://tehlug.org/topics/coreos/"
+  - name: "create your own language:
+۱"
+    source_url: "https://tehlug.org/topics/create-your-own-language/"
+  - name: "cybersecurity:
+۱"
+    source_url: "https://tehlug.org/topics/cybersecurity/"
+  - name: "data center:
+۱"
+    source_url: "https://tehlug.org/topics/data-center/"
+  - name: "data grid:
+۱"
+    source_url: "https://tehlug.org/topics/data-grid/"
+  - name: "database:
+۱"
+    source_url: "https://tehlug.org/topics/database/"
+  - name: "db:
+۱"
+    source_url: "https://tehlug.org/topics/db/"
+  - name: "django:
+۱"
+    source_url: "https://tehlug.org/topics/django/"
+  - name: "django unicorn:
+۱"
+    source_url: "https://tehlug.org/topics/django-unicorn/"
+  - name: "dns:
+۱"
+    source_url: "https://tehlug.org/topics/dns/"
+  - name: "docker:
+۱"
+    source_url: "https://tehlug.org/topics/docker/"
+  - name: "drupal:
+۱"
+    source_url: "https://tehlug.org/topics/drupal/"
+  - name: "e-commerce:
+۱"
+    source_url: "https://tehlug.org/topics/e-commerce/"
+  - name: "elastix:
+۱"
+    source_url: "https://tehlug.org/topics/elastix/"
+  - name: "electron:
+۱"
+    source_url: "https://tehlug.org/topics/electron/"
+  - name: "emacs:
+۱"
+    source_url: "https://tehlug.org/topics/emacs/"
+  - name: "embedded systems:
+۱"
+    source_url: "https://tehlug.org/topics/embedded-systems/"
+  - name: "erlang:
+۱"
+    source_url: "https://tehlug.org/topics/erlang/"
+  - name: "evolution of linux operating system network:
+۱"
+    source_url: "https://tehlug.org/topics/evolution-of-linux-operating-system-network/"
+  - name: "falco:
+۱"
+    source_url: "https://tehlug.org/topics/falco/"
+  - name: "floydhub:
+۱"
+    source_url: "https://tehlug.org/topics/floydhub/"
+  - name: "freedom:
+۱"
+    source_url: "https://tehlug.org/topics/freedom/"
+  - name: "front-end:
+۱"
+    source_url: "https://tehlug.org/topics/front-end/"
+  - name: "functional programming:
+۱"
+    source_url: "https://tehlug.org/topics/functional-programming/"
+  - name: "gaming:
+۱"
+    source_url: "https://tehlug.org/topics/gaming/"
+  - name: "gentoo:
+۱"
+    source_url: "https://tehlug.org/topics/gentoo/"
+  - name: "gimp:
+۱"
+    source_url: "https://tehlug.org/topics/gimp/"
+  - name: "git:
+۱"
+    source_url: "https://tehlug.org/topics/git/"
+  - name: "gitlab:
+۱"
+    source_url: "https://tehlug.org/topics/gitlab/"
+  - name: "hadoop:
+۱"
+    source_url: "https://tehlug.org/topics/hadoop/"
+  - name: "heartbleed:
+۱"
+    source_url: "https://tehlug.org/topics/heartbleed/"
+  - name: "ids:
+۱"
+    source_url: "https://tehlug.org/topics/ids/"
+  - name: "internet:
+۱"
+    source_url: "https://tehlug.org/topics/internet/"
+  - name: "iot:
+۱"
+    source_url: "https://tehlug.org/topics/iot/"
+  - name: "irc:
+۱"
+    source_url: "https://tehlug.org/topics/irc/"
+  - name: "it's your legacy:
+۱"
+    source_url: "https://tehlug.org/topics/its-your-legacy/"
+  - name: "janus:
+۱"
+    source_url: "https://tehlug.org/topics/janus/"
+  - name: "joomla:
+۱"
+    source_url: "https://tehlug.org/topics/joomla/"
+  - name: "k8s:
+۱"
+    source_url: "https://tehlug.org/topics/k8s/"
+  - name: "kde:
+۱"
+    source_url: "https://tehlug.org/topics/kde/"
+  - name: "latex:
+۱"
+    source_url: "https://tehlug.org/topics/latex/"
+  - name: "libnanomsg:
+۱"
+    source_url: "https://tehlug.org/topics/libnanomsg/"
+  - name: "liferay:
+۱"
+    source_url: "https://tehlug.org/topics/liferay/"
+  - name: "llm:
+۱"
+    source_url: "https://tehlug.org/topics/llm/"
+  - name: "lxd:
+۱"
+    source_url: "https://tehlug.org/topics/lxd/"
+  - name: "matrix:
+۱"
+    source_url: "https://tehlug.org/topics/matrix/"
+  - name: "media:
+۱"
+    source_url: "https://tehlug.org/topics/media/"
+  - name: "memory:
+۱"
+    source_url: "https://tehlug.org/topics/memory/"
+  - name: "message oriented middleware:
+۱"
+    source_url: "https://tehlug.org/topics/message-oriented-middleware/"
+  - name: "mlops:
+۱"
+    source_url: "https://tehlug.org/topics/mlops/"
+  - name: "mongodb:
+۱"
+    source_url: "https://tehlug.org/topics/mongodb/"
+  - name: "next cloud:
+۱"
+    source_url: "https://tehlug.org/topics/next-cloud/"
+  - name: "nginx:
+۱"
+    source_url: "https://tehlug.org/topics/nginx/"
+  - name: "nic:
+۱"
+    source_url: "https://tehlug.org/topics/nic/"
+  - name: "node js:
+۱"
+    source_url: "https://tehlug.org/topics/node-js/"
+  - name: "npm:
+۱"
+    source_url: "https://tehlug.org/topics/npm/"
+  - name: "openrisc:
+۱"
+    source_url: "https://tehlug.org/topics/openrisc/"
+  - name: "owncloud:
+۱"
+    source_url: "https://tehlug.org/topics/owncloud/"
+  - name: "p2p currency:
+۱"
+    source_url: "https://tehlug.org/topics/p2p-currency/"
+  - name: "packet injection:
+۱"
+    source_url: "https://tehlug.org/topics/packet-injection/"
+  - name: "parsidora:
+۱"
+    source_url: "https://tehlug.org/topics/parsidora/"
+  - name: "php/curl:
+۱"
+    source_url: "https://tehlug.org/topics/php/curl/"
+  - name: "physics:
+۱"
+    source_url: "https://tehlug.org/topics/physics/"
+  - name: "pilotlogic codetyphon:
+۱"
+    source_url: "https://tehlug.org/topics/pilotlogic-codetyphon/"
+  - name: "postgres:
+۱"
+    source_url: "https://tehlug.org/topics/postgres/"
+  - name: "privacy:
+۱"
+    source_url: "https://tehlug.org/topics/privacy/"
+  - name: "product management:
+۱"
+    source_url: "https://tehlug.org/topics/product-management/"
+  - name: "proxmox:
+۱"
+    source_url: "https://tehlug.org/topics/proxmox/"
+  - name: "pyreveal:
+۱"
+    source_url: "https://tehlug.org/topics/pyreveal/"
+  - name: "qt:
+۱"
+    source_url: "https://tehlug.org/topics/qt/"
+  - name: "quantom:
+۱"
+    source_url: "https://tehlug.org/topics/quantom/"
+  - name: "raspberry pi:
+۱"
+    source_url: "https://tehlug.org/topics/raspberry-pi/"
+  - name: "reactive manifesto:
+۱"
+    source_url: "https://tehlug.org/topics/reactive-manifesto/"
+  - name: "release strategy:
+۱"
+    source_url: "https://tehlug.org/topics/release-strategy/"
+  - name: "remastersys:
+۱"
+    source_url: "https://tehlug.org/topics/remastersys/"
+  - name: "scalability/availability/stability:
+۱"
+    source_url: "https://tehlug.org/topics/scalability/availability/stability/"
+  - name: "scanqt:
+۱"
+    source_url: "https://tehlug.org/topics/scanqt/"
+  - name: "scrapy:
+۱"
+    source_url: "https://tehlug.org/topics/scrapy/"
+  - name: "semantic web:
+۱"
+    source_url: "https://tehlug.org/topics/semantic-web/"
+  - name: "serverless:
+۱"
+    source_url: "https://tehlug.org/topics/serverless/"
+  - name: "shellcode:
+۱"
+    source_url: "https://tehlug.org/topics/shellcode/"
+  - name: "sinatra:
+۱"
+    source_url: "https://tehlug.org/topics/sinatra/"
+  - name: "soc:
+۱"
+    source_url: "https://tehlug.org/topics/soc/"
+  - name: "social:
+۱"
+    source_url: "https://tehlug.org/topics/social/"
+  - name: "socket:
+۱"
+    source_url: "https://tehlug.org/topics/socket/"
+  - name: "spam:
+۱"
+    source_url: "https://tehlug.org/topics/spam/"
+  - name: "startingup:
+۱"
+    source_url: "https://tehlug.org/topics/startingup/"
+  - name: "storage:
+۱"
+    source_url: "https://tehlug.org/topics/storage/"
+  - name: "svelte:
+۱"
+    source_url: "https://tehlug.org/topics/svelte/"
+  - name: "tdd:
+۱"
+    source_url: "https://tehlug.org/topics/tdd/"
+  - name: "telegram bot:
+۱"
+    source_url: "https://tehlug.org/topics/telegram-bot/"
+  - name: "ubuntu touch:
+۱"
+    source_url: "https://tehlug.org/topics/ubuntu-touch/"
+  - name: "udev:
+۱"
+    source_url: "https://tehlug.org/topics/udev/"
+  - name: "ux:
+۱"
+    source_url: "https://tehlug.org/topics/ux/"
+  - name: "vagrant:
+۱"
+    source_url: "https://tehlug.org/topics/vagrant/"
+  - name: "virtualization:
+۱"
+    source_url: "https://tehlug.org/topics/virtualization/"
+  - name: "wagtill:
+۱"
+    source_url: "https://tehlug.org/topics/wagtill/"
+  - name: "wasm:
+۱"
+    source_url: "https://tehlug.org/topics/wasm/"
+  - name: "web server:
+۱"
+    source_url: "https://tehlug.org/topics/web-server/"
+  - name: "web3:
+۱"
+    source_url: "https://tehlug.org/topics/web3/"
+  - name: "windows:
+۱"
+    source_url: "https://tehlug.org/topics/windows/"
+  - name: "wireless:
+۱"
+    source_url: "https://tehlug.org/topics/wireless/"
+  - name: "xmpp:
+۱"
+    source_url: "https://tehlug.org/topics/xmpp/"
+  - name: "xp:
+۱"
+    source_url: "https://tehlug.org/topics/xp/"
+  - name: "yii2:
+۱"
+    source_url: "https://tehlug.org/topics/yii2/"
+  - name: "zsh:
+۱"
+    source_url: "https://tehlug.org/topics/zsh/"
+  - name: "آزادی‌های دیجیتال:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C%D9%87%D8%A7%DB%8C-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84/"
+  - name: "آموزش آکادمیک:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A2%DA%A9%D8%A7%D8%AF%D9%85%DB%8C%DA%A9/"
+  - name: "آینده کسب و کارهای سیستم های متن باز:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A2%DB%8C%D9%86%D8%AF%D9%87-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D9%87%D8%A7%DB%8C-%D9%85%D8%AA%D9%86-%D8%A8%D8%A7%D8%B2/"
+  - name: "ارائه مطلب:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A7%D8%B1%D8%A7%D8%A6%D9%87-%D9%85%D8%B7%D9%84%D8%A8/"
+  - name: "اف‌دروید:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A7%D9%81%D8%AF%D8%B1%D9%88%DB%8C%D8%AF/"
+  - name: "اقتصاد متن باز:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D9%85%D8%AA%D9%86-%D8%A8%D8%A7%D8%B2/"
+  - name: "انجمن‌های نرم‌افزار آزاد:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A7%D9%86%D8%AC%D9%85%D9%86%D9%87%D8%A7%DB%8C-%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF/"
+  - name: "انقلاب صنعتی چهارم:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A7%D9%86%D9%82%D9%84%D8%A7%D8%A8-%D8%B5%D9%86%D8%B9%D8%AA%DB%8C-%DA%86%D9%87%D8%A7%D8%B1%D9%85/"
+  - name: "برنامه‌نویسی تجاری:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AA%D8%AC%D8%A7%D8%B1%DB%8C/"
+  - name: "برگزاری همایش:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D9%87%D9%85%D8%A7%DB%8C%D8%B4/"
+  - name: "بکولا:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%A8%DA%A9%D9%88%D9%84%D8%A7/"
+  - name: "تلفن اوبونتو:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%AA%D9%84%D9%81%D9%86-%D8%A7%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88/"
+  - name: "تکنولوژی:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%AA%DA%A9%D9%86%D9%88%D9%84%D9%88%DA%98%DB%8C/"
+  - name: "ثبت حقوقی:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%AB%D8%A8%D8%AA-%D8%AD%D9%82%D9%88%D9%82%DB%8C/"
+  - name: "جنبش وال-استریت:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%AC%D9%86%D8%A8%D8%B4-%D9%88%D8%A7%D9%84-%D8%A7%D8%B3%D8%AA%D8%B1%DB%8C%D8%AA/"
+  - name: "خبر:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%AE%D8%A8%D8%B1/"
+  - name: "رمزنگاری:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B1%D9%85%D8%B2%D9%86%DA%AF%D8%A7%D8%B1%DB%8C/"
+  - name: "زیکانف:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B2%DB%8C%DA%A9%D8%A7%D9%86%D9%81/"
+  - name: "ساخت توزیع لینوکس:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B3%D8%A7%D8%AE%D8%AA-%D8%AA%D9%88%D8%B2%DB%8C%D8%B9-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/"
+  - name: "سخت‌افزارهای آزاد:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B3%D8%AE%D8%AA%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A2%D8%B2%D8%A7%D8%AF/"
+  - name: "سیستم عامل بِل:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84-%D8%A8%D9%90%D9%84/"
+  - name: "شبکه private:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B4%D8%A8%DA%A9%D9%87-private/"
+  - name: "طبقه خلاق:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B7%D8%A8%D9%82%D9%87-%D8%AE%D9%84%D8%A7%D9%82/"
+  - name: "طراحی وب:
+۱"
+    source_url: "https://tehlug.org/topics/%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%88%D8%A8/"
+  - name: "مرکز فن آوری:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%85%D8%B1%DA%A9%D8%B2-%D9%81%D9%86-%D8%A2%D9%88%D8%B1%DB%8C/"
+  - name: "مرکز ملی متن‌باز:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%85%D8%B1%DA%A9%D8%B2-%D9%85%D9%84%DB%8C-%D9%85%D8%AA%D9%86%D8%A8%D8%A7%D8%B2/"
+  - name: "مزایای تجارت الکترونیک با وردپرس:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7%DB%8C-%D8%AA%D8%AC%D8%A7%D8%B1%D8%AA-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9-%D8%A8%D8%A7-%D9%88%D8%B1%D8%AF%D9%BE%D8%B1%D8%B3/"
+  - name: "مقاله علمی:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%85%D9%82%D8%A7%D9%84%D9%87-%D8%B9%D9%84%D9%85%DB%8C/"
+  - name: "مهاجرت:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%85%D9%87%D8%A7%D8%AC%D8%B1%D8%AA/"
+  - name: "مهندسی اجتماعی:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%DB%8C/"
+  - name: "نرم افزار آزاد:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF/"
+  - name: "نرم‌افزارهای موبایل:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84/"
+  - name: "پارسیکس:
+۱"
+    source_url: "https://tehlug.org/topics/%D9%BE%D8%A7%D8%B1%D8%B3%DB%8C%DA%A9%D8%B3/"
+  - name: "چگونه برنامه‌نویسی کنیم:
+۱"
+    source_url: "https://tehlug.org/topics/%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%A9%D9%86%DB%8C%D9%85/"
+  - name: "کار گروه:
+۱"
+    source_url: "https://tehlug.org/topics/%DA%A9%D8%A7%D8%B1-%DA%AF%D8%B1%D9%88%D9%87/"
+  - name: "کسب درآمد:
+۱"
+    source_url: "https://tehlug.org/topics/%DA%A9%D8%B3%D8%A8-%D8%AF%D8%B1%D8%A2%D9%85%D8%AF/"
+  - name: "کسب و کار:
+۱"
+    source_url: "https://tehlug.org/topics/%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1/"
+  - name: "کمک نظام صنفی:
+۱"
+    source_url: "https://tehlug.org/topics/%DA%A9%D9%85%DA%A9-%D9%86%D8%B8%D8%A7%D9%85-%D8%B5%D9%86%D9%81%DB%8C/"
+  - name: "گام‌های نخست آزادی:
+۱"
+    source_url: "https://tehlug.org/topics/%DA%AF%D8%A7%D9%85%D9%87%D8%A7%DB%8C-%D9%86%D8%AE%D8%B3%D8%AA-%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C/"
