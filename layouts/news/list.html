@@ -1,2 +1,18 @@
 {{ define "main" }}
+<section class="page-heading shell"><p class="eyebrow-text">آنچه در جامعه می‌گذرد</p><h1>اخبار</h1><p>اطلاعیه‌ها، گزارش‌ها و خبرهای تهران‌لاگ.</p></section>
+{{ $paginator := .Paginate .RegularPages.ByTitle.Reverse 9 }}
+<section class="news-page shell">
+  {{ range $paginator.Pages }}
+  <article class="news-card-fixed">
+    <div class="news-card-top">
+      <span class="news-label">اطلاعیه</span>
+      <time>{{ .Params.date_text }}</time>
+    </div>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Summary | plainify | truncate 120 }}</p>
+    <a class="news-card-link" href="{{ .RelPermalink }}">ادامه مطلب ←</a>
+  </article>
+  {{ end }}
+</section>
+{{ partial "pagination.html" $paginator }}
 {{ end }}

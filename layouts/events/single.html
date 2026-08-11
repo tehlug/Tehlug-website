@@ -1,2 +1,58 @@
 {{ define "main" }}
+<article class="event-post shell">
+  <aside class="event-post-aside">
+    <span>{{ .Title }}</span><strong>{{ replace .Title "جلسه " "" }}</strong>
+    <nav aria-label="بخش‌های رویداد">
+      <a class="active" href="#about-event">درباره رویداد</a>
+      <a href="#schedule">زمان‌بندی</a>
+      <a href="#speakers">ارائه‌دهندگان</a>
+      <a href="#gallery">گالری</a>
+    </nav>
+  </aside>
+  <div class="event-post-content">
+    <div class="event-post-hero poster-art{{ if .Params.poster }} event-post-poster{{ end }}">{{ with .Params.poster }}<img src="{{ . | relURL }}" alt="پوستر {{ $.Title }}">{{ else }}<span class="poster-kicker">TEHRAN LUG</span><strong>{{ .Title }}</strong><i aria-hidden="true"></i>{{ end }}</div>
+
+    <section id="about-event" class="prose-card event-section">
+      <span class="pill">{{ .Params.status }}</span>
+      <h1>{{ .Title }} تهران‌لاگ</h1>
+      {{ .Content }}
+      <a class="source-link" href="{{ .Params.source_url }}" target="_blank" rel="noopener">مشاهده در وب‌سایت اصلی تهران‌لاگ ↗</a>
+    </section>
+
+    <section id="schedule" class="event-section">
+      <div class="section-heading"><h2>زمان‌بندی و مکان</h2></div>
+      <div class="event-info-stack">
+        <div class="event-info-item">
+          <img src="{{ "assets/icons/calendar.svg" | relURL }}" alt="">
+          <span>تاریخ</span>
+          <strong>{{ .Params.date_text }}</strong>
+        </div>
+        <div class="event-info-item">
+          <img src="{{ "assets/icons/map-location.svg" | relURL }}" alt="">
+          <span>مکان</span>
+          <strong>{{ .Params.location }}</strong>
+        </div>
+        <div class="event-info-item">
+          <img src="{{ "assets/icons/duration-alt.svg" | relURL }}" alt="">
+          <span>ساعت</span>
+          <strong>{{ .Params.time }}</strong>
+        </div>
+      </div>
+    </section>
+
+    <section id="speakers" class="content-section event-section">
+      <div class="section-heading"><h2>ارائه‌دهندگان</h2></div>
+      <div class="speaker-row">{{ range .Params.speakers }}<div><b>{{ . }}</b><span>ارائه‌دهندهٔ این رویداد</span></div>{{ end }}</div>
+    </section>
+
+    <section id="gallery" class="content-section event-section">
+      <div class="section-heading"><h2>گالری رویداد</h2>{{ with .Params.gallery_url }}<a class="source-link" href="{{ . }}" target="_blank" rel="noopener">مشاهدهٔ گالری کامل ↗</a>{{ end }}</div>
+      {{ with .Params.gallery }}
+      <div class="gallery-grid">{{ range . }}<a class="gallery-item gallery-photo" href="{{ . | relURL }}" target="_blank"><img src="{{ . | relURL }}" alt="تصویری از {{ $.Title }}" loading="lazy"></a>{{ end }}</div>
+      {{ else }}
+      <p class="empty-gallery">برای این رویداد تصویر منتشر نشده است.</p>
+      {{ end }}
+    </section>
+  </div>
+</article>
 {{ end }}

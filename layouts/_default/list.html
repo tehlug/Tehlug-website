@@ -1,2 +1,16 @@
 {{ define "main" }}
+{{ if eq .Section "topics" }}
+<section class="page-heading shell"><p class="eyebrow-text">دانش جمعی ما</p><h1>موضوعات</h1><p>موضوعاتی که در نشست‌ها، گفتگوها و ارائه‌های تهران‌لاگ دنبال می‌کنیم.</p></section>
+<section class="topics-page shell">
+  <label class="topic-search"><span>جستجو در موضوعات</span><input type="search" placeholder="مثلاً لینوکس، امنیت یا Rust"></label>
+  <div class="topic-cloud">
+    {{ range site.Data.topics.items }}
+    <a href="{{ .source_url }}" target="_blank" rel="noopener">{{ .name }}</a>
+    {{ end }}
+  </div>
+  <div id="topic-events" class="topic-event-list"><div class="section-heading"><h2>کاوش در آرشیو</h2></div><a href="https://tehlug.org/topics/" target="_blank" rel="noopener"><span>منبع اصلی</span>مشاهدهٔ همهٔ موضوعات و نشست‌های مرتبط در آرشیو تهران‌لاگ<b>←</b></a></div>
+</section>
+{{ else }}
+<section class="page-heading shell"><h1>{{ .Title }}</h1></section>
+{{ end }}
 {{ end }}

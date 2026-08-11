@@ -1,2 +1,38 @@
 {{ define "main" }}
+<section class="page-heading shell">
+  <p class="eyebrow-text">دورهمی‌های جامعه نرم‌افزار آزاد</p>
+  <h1>رویدادها</h1>
+  <p>آرشیو نشست‌های برگزارشدهٔ تهران‌لاگ؛ از گفتگوهای آزاد تا ارائه‌های فنی.</p>
+</section>
+
+{{ with site.GetPage "/events/280" }}
+<section class="featured-event shell">
+  <div class="featured-event-art{{ if .Params.poster }} featured-event-image{{ end }}">
+    {{ with .Params.poster }}<img src="{{ . | relURL }}" alt="پوستر {{ $.Title }}">{{ else }}<strong>{{ .Title }}</strong>{{ end }}
+  </div>
+  <div class="featured-event-copy">
+    <span class="pill pill-dark">{{ .Params.status }}</span>
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Summary | plainify | truncate 160 }}</p>
+    <ul class="event-details"><li>{{ .Params.date_text }}، ساعت {{ .Params.time }}</li><li>{{ .Params.location }}</li></ul>
+    <a class="button button-dark" href="{{ .RelPermalink }}">جزئیات رویداد</a>
+  </div>
+</section>
+{{ end }}
+
+<section class="archive-area">
+  <div class="shell">
+    <div class="section-heading"><h2>رویدادهای برگزارشده</h2><span>آرشیو نشست‌ها</span></div>
+    {{ $paginator := .Paginate .RegularPages.ByWeight.Reverse 12 }}
+    <div class="event-grid">
+      {{ range $paginator.Pages }}
+      <article class="event-tile">
+        <div class="event-tile-art poster-art poster-art--small{{ if .Params.poster }} event-tile-image{{ end }}">{{ with .Params.poster }}<img src="{{ . | relURL }}" alt="پوستر {{ $.Title }}">{{ else }}<span>TEHLUG</span><strong>{{ .Title }}</strong>{{ end }}</div>
+        <div class="event-tile-copy"><span class="pill">{{ .Params.status }}</span><h3>{{ .Title }}</h3><p>{{ .Params.date_text }}</p><p class="muted">{{ .Params.location }}</p><a href="{{ .RelPermalink }}">مشاهده رویداد <span>←</span></a></div>
+      </article>
+      {{ end }}
+    </div>
+    {{ partial "pagination.html" $paginator }}
+  </div>
+</section>
 {{ end }}

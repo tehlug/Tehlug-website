@@ -1,2 +1,168 @@
 {{ define "main" }}
+{{ if eq .Section "pages" }}
+  {{ if eq .Params.page_kind "about" }}
+  <section class="page-heading shell"><p class="eyebrow-text">جامعهٔ نرم‌افزار آزاد تهران</p><h1>دربارهٔ ما</h1></section>
+  <section class="about-page shell">
+    <div class="about-intro prose-card">{{ .Content }}</div>
+    <div class="about-stat"><span>از سال</span><strong>{{ partial "fa-digits.html" 1384 }}</strong><small>همراه جامعهٔ متن‌باز</small></div>
+    <div class="about-why prose-card"><h2>چرا تهران‌لاگ؟</h2><p>تهران‌لاگ محلی برای تبادل نظر، یادگیری گنو/لینوکس، دنبال‌کردن تحولات نرم‌افزار آزاد و تبدیل ایده‌های تازه به همکاری‌های واقعی است.</p></div>
+    <section class="founders"><div class="section-heading"><h2>موسسان نخستین</h2></div><div class="people-grid">{{ range slice "آرش حسامی" "محمد درویش" "بهنام بهجت مرندی" "نوید عبدی" "علی پوریان" "سید سینا سالک" "محمد وزیریان" "محسن پهلوان‌زاده" "علی رستگار" "آرمین رنجبر" "ایریکس" }}<div><i>{{ slicestr . 0 1 }}</i><span>{{ . }}</span></div>{{ end }}</div></section>
+  </section>
+
+  {{ else if eq .Params.page_kind "gallery" }}
+  {{ $events := where site.RegularPages "Section" "events" }}
+  <section class="gallery-page shell" data-gallery-root>
+    <input type="radio" name="gallery-mode" id="gallery-mode-grouped" class="gallery-mode-input" checked>
+    <input type="radio" name="gallery-mode" id="gallery-mode-all" class="gallery-mode-input">
+
+    <div class="page-heading gallery-heading">
+      <div>
+        <p class="eyebrow-text">آرشیو تصاویر منتشرشده در وب‌سایت تهران‌لاگ</p>
+        <h1>گالری</h1>
+      </div>
+      <div class="gallery-view-toggle" role="group" aria-label="نمای گالری">
+        <label for="gallery-mode-grouped" class="gallery-toggle">گروه‌بندی رویدادها</label>
+        <label for="gallery-mode-all" class="gallery-toggle">نمایش همه تصاویر</label>
+      </div>
+    </div>
+
+    <div class="gallery-albums" id="gallery-grouped-view">
+      {{ range $event := $events.ByWeight.Reverse }}
+        {{ with $event.Params.gallery }}
+          {{ $images := . }}
+          <article class="gallery-album">
+            <header class="gallery-album-head">
+              <div class="gallery-album-copy">
+                <p class="gallery-album-meta">{{ with $event.Params.date_text }}{{ . }} · {{ end }}{{ partial "fa-digits.html" (len $images) }} تصویر</p>
+                <h2>{{ $event.Title }}</h2>
+              </div>
+              <div class="gallery-album-actions">
+                <a href="{{ $event.RelPermalink }}">صفحه رویداد</a>
+                {{ with $event.Params.gallery_url }}<a href="{{ . }}" target="_blank" rel="noopener">آرشیو کامل ↗</a>{{ end }}
+              </div>
+            </header>
+            <div class="gallery-album-mosaic" data-lightbox-group>
+              {{ range $i, $img := $images }}
+              <a class="gallery-mosaic-item{{ if eq $i 0 }} is-hero{{ end }}" href="{{ $img | relURL }}" data-lightbox-item data-caption="{{ $event.Title }}">
+                <img src="{{ $img | relURL }}" alt="تصویری از {{ $event.Title }}" loading="lazy">
+              </a>
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="gallery-all-view" id="gallery-all-view">
+      <div class="gallery-masonry" data-lightbox-group>
+        {{ range $event := $events.ByWeight.Reverse }}
+          {{ range $event.Params.gallery }}
+          <a class="gallery-masonry-item" href="{{ . | relURL }}" data-lightbox-item data-caption="{{ $event.Title }}">
+            <img src="{{ . | relURL }}" alt="تصویری از {{ $event.Title }}" loading="lazy">
+            <span>{{ $event.Title }}</span>
+          </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <p class="gallery-credit">تصاویر از آرشیو منتشرشدهٔ <a href="https://tehlug.org/images/" target="_blank" rel="noopener">تهران‌لاگ</a> وارد شده‌اند و از جدیدترین رویداد به قدیمی‌ترین چیده شده‌اند.</p>
+
+    <div class="lightbox is-hidden" id="gallery-lightbox" hidden data-lightbox aria-hidden="true">
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
+        <button type="button" class="lightbox-close" data-lightbox-close aria-label="بستن">×</button>
+        <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="تصویر قبلی">‹</button>
+        <figure class="lightbox-stage">
+          <img src="" alt="" data-lightbox-image>
+          <figcaption data-lightbox-caption></figcaption>
+        </figure>
+        <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next aria-label="تصویر بعدی">›</button>
+        <p class="lightbox-counter"><span data-lightbox-current>۱</span> / <span data-lightbox-total>۱</span></p>
+      </div>
+    </div>
+  </section>
+
+  {{ else if eq .Params.page_kind "speakers" }}
+  {{ $events := where site.RegularPages "Section" "events" }}
+  {{ $ordered := slice }}
+  {{ $seen := slice }}
+  {{ range $events.ByWeight.Reverse }}
+    {{ range .Params.speakers }}
+      {{ if and . (not (in $seen .)) }}
+        {{ $seen = $seen | append . }}
+        {{ $ordered = $ordered | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $perPage := 24 }}
+  {{ $total := len $ordered }}
+  {{ $totalPages := div (add $total (sub $perPage 1)) $perPage }}
+  {{ if lt $totalPages 1 }}{{ $totalPages = 1 }}{{ end }}
+  {{ $current := 1 }}
+  {{ with .Params.speakers_page }}{{ $current = int . }}{{ end }}
+  {{ if lt $current 1 }}{{ $current = 1 }}{{ end }}
+  {{ if gt $current $totalPages }}{{ $current = $totalPages }}{{ end }}
+  {{ $start := mul (sub $current 1) $perPage }}
+  {{ $pageItems := first $perPage (after $start $ordered) }}
+  <section class="page-heading shell">
+    <p class="eyebrow-text">از آخرین رویداد تا قدیمی‌ترین</p>
+    <h1>ارائه‌دهندگان</h1>
+    <p>{{ partial "fa-digits.html" $total }} نفر · صفحه {{ partial "fa-digits.html" $current }} از {{ partial "fa-digits.html" $totalPages }}</p>
+  </section>
+  <section class="speaker-directory shell">
+    {{ range $name := $pageItems }}
+      {{ $related := slice }}
+      {{ range $events.ByWeight.Reverse }}
+        {{ if in .Params.speakers $name }}
+          {{ $related = $related | append . }}
+        {{ end }}
+      {{ end }}
+      {{ $latest := index $related 0 }}
+      <article>
+        <i>{{ slicestr $name 0 1 }}</i>
+        <span>{{ partial "fa-digits.html" (len $related) }} ارائه</span>
+        <h2>{{ $name }}</h2>
+        <p>{{ with $latest }}{{ .Title }}{{ if .Params.date_text }} · {{ .Params.date_text }}{{ end }}{{ end }}</p>
+        {{ with $latest }}<a href="{{ .RelPermalink }}">مشاهده رویداد ←</a>{{ end }}
+      </article>
+    {{ end }}
+  </section>
+  {{ if gt $totalPages 1 }}
+  <nav class="pager" aria-label="صفحه‌بندی ارائه‌دهندگان">
+    {{ if gt $current 1 }}
+      <a class="pager-btn" href="{{ "/speakers/" | relURL }}">اولین</a>
+      <a class="pager-btn" href="{{ if eq (sub $current 1) 1 }}{{ "/speakers/" | relURL }}{{ else }}{{ printf "/speakers/page/%d/" (sub $current 1) | relURL }}{{ end }}">قبلی</a>
+    {{ else }}
+      <span class="pager-btn is-disabled" aria-disabled="true">اولین</span>
+      <span class="pager-btn is-disabled" aria-disabled="true">قبلی</span>
+    {{ end }}
+    <div class="pager-pages">
+      {{ $prevShown := 0 }}
+      {{ range seq $totalPages }}
+        {{ $n := . }}
+        {{ $show := or (eq $n 1) (eq $n $totalPages) (and (ge $n (sub $current 1)) (le $n (add $current 1))) }}
+        {{ if $show }}
+          {{ if and (gt $n (add $prevShown 1)) (gt $prevShown 0) }}<span class="pager-gap" aria-hidden="true">…</span>{{ end }}
+          <a class="pager-num{{ if eq $n $current }} is-active{{ end }}" href="{{ if eq $n 1 }}{{ "/speakers/" | relURL }}{{ else }}{{ printf "/speakers/page/%d/" $n | relURL }}{{ end }}"{{ if eq $n $current }} aria-current="page"{{ end }}>{{ partial "fa-digits.html" $n }}</a>
+          {{ $prevShown = $n }}
+        {{ end }}
+      {{ end }}
+    </div>
+    {{ if lt $current $totalPages }}
+      <a class="pager-btn" href="{{ printf "/speakers/page/%d/" (add $current 1) | relURL }}">بعدی</a>
+      <a class="pager-btn" href="{{ printf "/speakers/page/%d/" $totalPages | relURL }}">آخرین</a>
+    {{ else }}
+      <span class="pager-btn is-disabled" aria-disabled="true">بعدی</span>
+      <span class="pager-btn is-disabled" aria-disabled="true">آخرین</span>
+    {{ end }}
+  </nav>
+  {{ end }}
+
+  {{ else }}
+  <section class="simple-page shell"><div class="page-heading"><h1>{{ .Title }}</h1></div><div class="prose-card">{{ .Content }}<p>برای پرسش‌ها، پیشنهادها یا همکاری با تهران‌لاگ، از طریق کانال تلگرام با ما در ارتباط باشید.</p><a class="button button-dark" href="https://t.me/TehlugGp">عضویت در جامعه</a></div></section>
+  {{ end }}
+{{ else }}
+  <article class="simple-page shell"><div class="page-heading"><h1>{{ .Title }}</h1></div><div class="prose-card">{{ .Content }}</div></article>
+{{ end }}
 {{ end }}

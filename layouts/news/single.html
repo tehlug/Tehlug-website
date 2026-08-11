@@ -1,2 +1,7 @@
 {{ define "main" }}
+<article class="article-page shell">
+  <header><span class="news-label">اطلاعیه</span><time>{{ .Params.date_text }}</time><h1>{{ .Title }}</h1><p>خبرها و اطلاعیه‌های جامعهٔ تهران‌لاگ</p></header>
+  <div class="prose-card">{{ .Content }}</div>
+  <a class="back-link" href="/news/">← بازگشت به اخبار</a>
+</article>
 {{ end }}
