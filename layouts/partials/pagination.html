@@ -1,0 +1,27 @@
+{{ $paginator := . }}
+{{ if gt $paginator.TotalPages 1 }}
+{{ $first := index $paginator.Pagers 0 }}
+{{ $last := index $paginator.Pagers (sub (len $paginator.Pagers) 1) }}
+<nav class="pager" aria-label="صفحه‌بندی">
+  <a class="pager-btn{{ if not $paginator.HasPrev }} is-disabled{{ end }}"{{ if $paginator.HasPrev }} href="{{ $first.URL }}"{{ else }} aria-disabled="true" tabindex="-1"{{ end }}>اولین</a>
+  <a class="pager-btn{{ if not $paginator.HasPrev }} is-disabled{{ end }}"{{ if $paginator.HasPrev }} href="{{ $paginator.Prev.URL }}"{{ else }} aria-disabled="true" tabindex="-1"{{ end }}>قبلی</a>
+
+  <div class="pager-pages">
+    {{ $current := $paginator.PageNumber }}
+    {{ $total := $paginator.TotalPages }}
+    {{ $prevShown := 0 }}
+    {{ range $paginator.Pagers }}
+      {{ $n := .PageNumber }}
+      {{ $show := or (eq $n 1) (eq $n $total) (and (ge $n (sub $current 1)) (le $n (add $current 1))) }}
+      {{ if $show }}
+        {{ if and (gt $n (add $prevShown 1)) (gt $prevShown 0) }}<span class="pager-gap" aria-hidden="true">…</span>{{ end }}
+        <a class="pager-num{{ if eq $n $current }} is-active{{ end }}" href="{{ .URL }}"{{ if eq $n $current }} aria-current="page"{{ end }}>{{ partial "fa-digits.html" $n }}</a>
+        {{ $prevShown = $n }}
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <a class="pager-btn{{ if not $paginator.HasNext }} is-disabled{{ end }}"{{ if $paginator.HasNext }} href="{{ $paginator.Next.URL }}"{{ else }} aria-disabled="true" tabindex="-1"{{ end }}>بعدی</a>
+  <a class="pager-btn{{ if not $paginator.HasNext }} is-disabled{{ end }}"{{ if $paginator.HasNext }} href="{{ $last.URL }}"{{ else }} aria-disabled="true" tabindex="-1"{{ end }}>آخرین</a>
+</nav>
+{{ end }}

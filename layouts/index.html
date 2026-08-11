@@ -1,101 +1,54 @@
 {{ define "main" }}
-  <section class="home-hero" aria-label="رویداد تهران‌لاگ">
-    <div class="home-hero-grid">
-      <aside class="home-event-aside" aria-label="معرفی و موضوعات رویداد">
-        <article class="home-event-description">
-          <p>
-            رویداد ۲۷۹ جامعه نرم‌افزار آزاد تهران (تهلاگ) با حمایت نوبیتکس و افراساپ، روز پنجشنبه ۲۵ اردیبهشت، از ساعت ۱۲ تا ۱۸ در دانشگاه صنعتی امیرکبیر برگزار می‌شود. این گردهمایی با ظرفیت ۴۰۰ نفر، فرصتی ارزشمند برای علاقه‌مندان به دنیای متن‌باز، نرم‌افزار آزاد و لینوکس است تا با همفکران خود دیدار و تبادل دانش داشته باشند.
-            ارائه‌ها و گفتگوها به‌گونه‌ای برنامه‌ریزی شده‌اند که موضوعات روز دنیای فناوری و مسائل فنی مرتبط با جوامع متن‌باز را پوشش دهند. حضور در این رویداد، گامی مهم برای به‌روز نگه‌داشتن دانش، یادگیری تجربیات واقعی و تعامل مستقیم با متخصصان و فعالان این حوزه خواهد بود.
-          </p>
+<div class="home">
+  <section class="home-hero shell" aria-labelledby="home-title">
+    <div class="home-intro">
+      <p class="home-kicker">جامعهٔ نرم‌افزار آزاد تهران</p>
+      <h1 id="home-title">با هم، آزادتر می‌سازیم.</h1>
+      <p class="home-lead">تهران‌لاگ فضایی برای یادگیری، گفتگو و به اشتراک گذاشتن تجربه‌های واقعی در دنیای گنو/لینوکس و نرم‌افزار آزاد است.</p>
+      <div class="home-actions">
+        <a class="home-button home-button-primary" href="https://t.me/TehlugGp">عضویت در جامعه</a>
+        <a class="home-button home-button-quiet" href="/about/">بیشتر دربارهٔ ما <span aria-hidden="true">←</span></a>
+      </div>
+      <div class="home-numbers" aria-label="آمار تهران‌لاگ">
+        <div><strong>۲۸۰</strong><span>نشست برگزارشده</span></div>
+        <div><strong>+۱۰۰۰</strong><span>عضو جامعه</span></div>
+        <div><strong>۱۳۸۴</strong><span>سال آغاز</span></div>
+      </div>
+    </div>
+    <article class="home-featured-event" aria-labelledby="next-event-title">
+      <div class="home-event-art home-event-poster"><img src="{{ "assets/images/archive/events/280/poster.webp" | relURL }}" alt="پوستر جلسه ۲۸۰ تهران‌لاگ"></div>
+      <div class="home-featured-copy">
+        <span class="home-label">رویداد بعدی</span>
+        <h2 id="next-event-title">جلسه ۲۸۰<br>تهران‌لاگ</h2>
+        <ul>
+          <li><img src="{{ "assets/icons/calendar.svg" | relURL }}" alt="">۷ آذر ۱۴۰۴، ساعت ۱۱:۳۰ تا ۱۷:۳۰</li>
+          <li><img src="{{ "assets/icons/map-location.svg" | relURL }}" alt="">دانشگاه صنعتی امیرکبیر</li>
+        </ul>
+        <a href="/events/280/">مشاهدهٔ رویداد <span aria-hidden="true">←</span></a>
+      </div>
+    </article>
+  </section>
+
+  <section class="home-section home-events">
+    <div class="shell">
+      <header class="home-section-header"><div><p>از دل جامعه</p><h2>رویدادها و دورهمی‌ها</h2></div><a href="/events/">همهٔ رویدادها <span aria-hidden="true">←</span></a></header>
+      <div class="home-event-grid">
+        {{ range slice (dict "slug" "280" "number" "۲۸۰" "date" "۷ آذر ۱۴۰۴" "place" "دانشگاه صنعتی امیرکبیر") (dict "slug" "279" "number" "۲۷۹" "date" "۲۵ اردیبهشت ۱۴۰۴" "place" "دانشگاه صنعتی امیرکبیر") (dict "slug" "278" "number" "۲۷۸" "date" "۹ اسفند ۱۴۰۳" "place" "دیجی‌نکست") }}
+        <article class="home-event-card">
+          <div class="home-event-card-art"><span>TEHLUG</span><strong>{{ .number }}</strong></div>
+          <div class="home-event-card-copy"><span class="home-status{{ if .cancelled }} is-cancelled{{ end }}">{{ if .cancelled }}لغو شده{{ else }}برگزار شده{{ end }}</span><h3>جلسه {{ .number }}</h3><p>{{ .date }}</p><p>{{ .place }}</p><a href="/events/{{ .slug }}/">جزئیات <span aria-hidden="true">←</span></a></div>
         </article>
-
-        <section class="home-event-topics" aria-label="موضوعات رویداد">
-          <div class="home-event-topics-heading">
-            <span aria-hidden="true"></span>
-            <h2>موضوعات</h2>
-          </div>
-          <div class="home-event-tags">
-            <span>Cloud</span>
-            <span>BSD</span>
-            <span>NPM</span>
-            <span>Rust</span>
-            <span>Devops</span>
-            <span>Rust</span>
-            <span>Devops</span>
-          </div>
-        </section>
-      </aside>
-
-      <div class="home-event-main">
-        <figure class="home-event-poster">
-          <img src="{{ "media/event-post-v1-1-gallery.jpg" | relURL }}" alt="پوستر رویداد تهران‌لاگ">
-        </figure>
-
-        <div class="home-event-info" aria-label="زمان و مکان رویداد">
-          <div class="home-event-info-badge">
-            <span>برگزار شده</span>
-          </div>
-          <dl class="home-event-info-list">
-            <div class="home-event-info-item">
-              <dt>تاریخ</dt>
-              <img class="home-event-info-icon" src="{{ "assets/icons/calendar.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
-              <dd>پنجشنبه ۲۵ اردیبهشت ۱۴۰۴</dd>
-            </div>
-            <div class="home-event-info-item">
-              <dt>مکان</dt>
-              <img class="home-event-info-icon" src="{{ "assets/icons/map-location.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
-              <dd>تهران - دانشگاه امیرکبیر</dd>
-            </div>
-            <div class="home-event-info-item">
-              <dt>زمان</dt>
-              <img class="home-event-info-icon" src="{{ "assets/icons/duration-alt.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
-              <dd>۱۱:۳۰ تا ۱۷:۳۰</dd>
-            </div>
-            <div class="home-event-info-item">
-              <dt>نشانی</dt>
-              <img class="home-event-info-icon" src="{{ "assets/icons/map-location-track.svg" | relURL }}" alt="" width="24" height="24" aria-hidden="true">
-              <dd>تهران، میدان ولیعصر، خیابان حافظ، پلاک ۳۵۰، دانشگاه امیرکبیر</dd>
-            </div>
-          </dl>
-        </div>
+        {{ end }}
       </div>
     </div>
   </section>
 
-  <section class="home-about" aria-labelledby="home-about-title">
-    <div class="home-about-content">
-      <div class="home-about-heading">
-        <span class="home-about-label">درباره تهلاگ</span>
-        <h2 id="home-about-title">جامعه‌ای برای کاربران لینوکس و علاقمندان نرم‌افزار آزاد</h2>
-      </div>
-      <div class="home-about-body">
-        <p>
-تهلاگ، یا گروه کاربران گنو/لینوکس تهران، جمعی مستقل از کاربران و علاقه‌مندان نرم‌افزار آزاد در تهران است. محور اصلی جلسه‌ها نرم‌افزار آزاد است؛ شرکت در جلسات این گروه برای عموم آزاد است. شما نیز چنانچه علاقه‌مند هستید میتوانید در جلسات آن شرکت کنید و دانش خود را با سایر اعضا به اشتراک گذاشته و یا از دانش آنان استفاده کنید.           <a class="home-about-readmore" href="{{ "about-tehlug/" | relURL }}">بیشتر بخوانید</a>
-        </p>
-        <div class="home-about-links">
-          <a href="https://t.me/TehlugGp">
-            <img class="home-about-link-icon" src="{{ "assets/icons/telegram.svg" | relURL }}" alt="" width="24" height="24">
-            <span>
-              <strong>تلگرام</strong>
-              <small>گفتگو با جامعه</small>
-            </span>
-          </a>
-          <a href="{{ "calendar/" | relURL }}">
-            <img class="home-about-link-icon" src="{{ "assets/icons/calendar.svg" | relURL }}" alt="" width="24" height="24">
-            <span>
-              <strong>تقویم</strong>
-              <small>جلسه‌های آینده</small>
-            </span>
-          </a>
-          <a href="https://github.com/tehlug">
-            <img class="home-about-link-icon" src="{{ "assets/icons/github.svg" | relURL }}" alt="" width="24" height="24">
-            <span>
-              <strong>گیتهاب</strong>
-              <small>پروژه‌های متن باز</small>
-            </span>
-          </a>
-        </div>
-      </div>
+  <section class="home-section shell home-news">
+    <header class="home-section-header"><div><p>تازه‌ها</p><h2>آخرین اخبار</h2></div><a href="/news/">همهٔ خبرها <span aria-hidden="true">←</span></a></header>
+    <div class="home-news-grid">
+      <article><span>اطلاعیه</span><time>۱۴ آذر ۱۴۰۴</time><h3>دورهمی تهران‌لاگ</h3><p>برای گفتگو دربارهٔ آیندهٔ جامعه و شنیدن پیشنهادهای اعضا دور هم جمع می‌شویم.</p><a href="/news/meetup/">خواندن خبر <span aria-hidden="true">←</span></a></article>
+      <article><span>گزارش</span><time>۲۴ آذر ۱۴۰۴</time><h3>صورت مالی تهران‌لاگ</h3><p>گزارش درآمدها و هزینه‌ها در راستای شفافیت با اعضای جامعه به اشتراک گذاشته شده است.</p><a href="/news/">خواندن خبر <span aria-hidden="true">←</span></a></article>
     </div>
   </section>
+</div>
 {{ end }}

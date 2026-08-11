@@ -1,34 +1,22 @@
 <header class="site-header">
-  <div class="site-brandbar">
-    <a class="site-logo" href="/" aria-label="خانه">
-      <img src="{{ "media/tehlug-logo.png" | relURL }}" alt="تهلاگ" width="128" height="48">
-    </a>
-    <div class="site-title">
-      <span>تهلاگ</span>
-      <small>گروه کاربران گنو/لینوکس تهران</small>
-    </div>
-  </div>
-
-  <nav class="site-nav" aria-label="منوی اصلی">
-    <div class="site-nav-inner">
-      <input class="site-nav-checkbox" type="checkbox" id="site-nav-toggle">
-      <label class="site-nav-toggle" for="site-nav-toggle">
-        <span class="site-nav-toggle-icon" aria-hidden="true">
-          <span class="site-nav-toggle-line"></span>
-          <span class="site-nav-toggle-line"></span>
-          <span class="site-nav-toggle-line"></span>
-        </span>
-        <span class="site-nav-toggle-text">منو</span>
-      </label>
-      <div class="site-nav-links" id="site-nav-links">
-        <a href="/">خانه</a>
-        <a href="/about-tehlug/">درباره تهلاگ</a>
-        <a href="/calendar/">جلسات آینده</a>
-        <a href="/events/">جلسات گذشته</a>
-        <a href="/news/">اخبار</a>
-        <a href="/speakers/">ارائه دهندگان</a>
-        <a href="/gallery/">گالری تصاویر</a>
+  <div class="site-header-inner">
+    <div class="header-main">
+      <div class="header-social" aria-label="شبکه‌های اجتماعی">
+        <a href="https://youtube.com/@TehranLUG"><img src="{{ "assets/icons/youtube.svg" | relURL }}" alt="یوتیوب"></a>
+        <a href="https://t.me/TehlugGp"><img src="{{ "assets/icons/telegram.svg" | relURL }}" alt="تلگرام"></a>
+        <a href="https://instagram.com/tehlug"><img src="{{ "assets/icons/instagram.svg" | relURL }}" alt="اینستاگرام"></a>
+        <a href="https://github.com/tehlug"><img src="{{ "assets/icons/github.svg" | relURL }}" alt="گیتهاب"></a>
       </div>
+      <nav class="site-nav" aria-label="منوی اصلی">
+        <input class="site-nav-checkbox" type="checkbox" id="site-nav-toggle">
+        <label class="site-nav-toggle" for="site-nav-toggle"><span></span><span></span><span></span><b>منو</b></label>
+        <div class="site-nav-links">
+          <a href="/about/">درباره ما</a><a href="/gallery/">گالری</a><a href="/topics/">موضوعات</a><a href="/speakers/">ارائه‌دهندگان</a><a href="/news/">اخبار</a><a href="/events/">رویدادها</a>
+        </div>
+      </nav>
+      <a class="header-home active" href="/">تهران‌لاگ</a>
     </div>
-  </nav>
+    <a class="header-calendar" href="/calendar/"><span>تقویم</span><img src="{{ "assets/icons/calendar.svg" | relURL }}" alt=""></a>
+    <a class="header-logo" href="/" aria-label="خانه"><img src="{{ "favicon.ico" | relURL }}" alt="نشان تهران‌لاگ"></a>
+  </div>
 </header>

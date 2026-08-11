@@ -3,14 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ .Title }}</title>
+  <title>{{ if .IsHome }}تهران‌لاگ | جامعه کاربران گنو/لینوکس تهران{{ else }}{{ .Title }} | تهران‌لاگ{{ end }}</title>
+  <meta name="description" content="تهران‌لاگ؛ جامعه مستقل کاربران گنو/لینوکس و نرم‌افزار آزاد در تهران">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="64x64">
   <link rel="stylesheet" href="{{ "assets/css/main.css" | relURL }}">
   <script src="{{ "assets/js/main.js" | relURL }}" defer></script>
 </head>
 <body>
   {{ partial "header.html" . }}
 
-  <main>
+  <main id="main-content">
     {{ block "main" . }}{{ end }}
   </main>
 

@@ -1,69 +1,14 @@
-<footer class="site-footer">
-  <section class="footer-subscribe">
-    <div>
-      <h2>دریافت تازه‌ها</h2>
-      <p>برای دریافت خبرهای تازه و رویدادهای بعدی ایمیل خود را وارد کنید.</p>
-    </div>
-    <form class="footer-subscribe-form" action="#" method="post">
-      <label class="footer-subscribe-label" for="footer-email">ایمیل</label>
-      <input id="footer-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="email@example.com">
-      <button type="submit">عضویت</button>
-    </form>
-  </section>
-
-  <section class="footer-main">
-    <div class="footer-columns">
-      <nav class="footer-column">
-        <h2>تهلاگ</h2>
-        <a href="/about-tehlug/">درباره ما</a>
-        <a href="https://tehlug.notion.site/1f2ac3c2c23c8177b226f02162a09bf6?v=1f2ac3c2c23c81cab63b000c51edeee9">صورت مالی</a>
-        <a href="/faq/">پرسش‌های پرتکرار</a>
-        <a href="/news/">اخبار جامعه</a>
-        <a href="#">تماس با ما</a>
-      </nav>
-      <nav class="footer-column">
-        <h2>جلسات و آرشیو</h2>
-        <a href="/calendar/">جلسات آینده</a>
-        <a href="/events/">جلسات گذشته</a>
-        <a href="https://calendar.google.com/calendar?cid=MHY3M3Z0czVoYnU5N3Nmajk0Mzdtcmc1cGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">گوگل کلندر</a>
-        <a href="https://evand.com/organizations/tehlug">ایوند</a>
-        <a href="https://archive.org/details/@tehlug">بایگانی</a>
-      </nav>
-      <nav class="footer-column">
-        <h2>جامعه و مشارکت</h2>
-        <a href="/gallery/">گالری تصاویر</a>
-        <a href="/speakers/">ارائه دهندگان</a>
-        <a href="https://t.me/TehlugGp">گروه تلگرام</a>
-        <a href="https://github.com/tehlug">گیتهاب</a>
-        <a href="#">عضویت</a>
-      </nav>
-    </div>
-
-    <div class="footer-brand">
-      <img class="footer-logo" src="{{ "media/tehlug-logo.png" | relURL }}" alt="تهلاگ" width="128" height="48">
-    </div>
-  </section>
-
-  <section class="footer-bottom">
-    <div class="footer-social" aria-label="تهلاگ در شبکه‌های اجتماعی">
-      <a href="https://instagram.com/tehlug" aria-label="اینستاگرام تهلاگ">
-        <img class="footer-social-icon" src="{{ "assets/icons/instagram.svg" | relURL }}" alt="" width="24" height="24">
-      </a>
-      <a href="https://twitter.com/tehlug" aria-label="توییتر تهلاگ">
-        <img class="footer-social-icon" src="{{ "assets/icons/twitter-alt.svg" | relURL }}" alt="" width="24" height="24">
-      </a>
-      <a href="https://linkedin.com/company/tehlug/" aria-label="لینکدین تهلاگ">
-        <img class="footer-social-icon" src="{{ "assets/icons/linkedin.svg" | relURL }}" alt="" width="24" height="24">
-      </a>
-      <a href="https://youtube.com/@TehranLUG" aria-label="یوتیوب تهلاگ">
-        <img class="footer-social-icon" src="{{ "assets/icons/youtube.svg" | relURL }}" alt="" width="24" height="24">
-      </a>
-      <a href="https://mastodon.social/@tehlug" aria-label="ماستودون تهلاگ">
-        <img class="footer-social-icon" src="{{ "assets/icons/mastodon.svg" | relURL }}" alt="" width="24" height="24">
-      </a>
-      <a href="https://github.com/tehlug" aria-label="گیتهاب تهلاگ">
-        <img class="footer-social-icon" src="{{ "assets/icons/github.svg" | relURL }}" alt="" width="24" height="24">
-      </a>
-    </div>
-  </section>
+<footer class="site-footer shell">
+  <div class="footer-social" aria-label="شبکه‌های اجتماعی">
+    <a href="https://youtube.com/@TehranLUG"><img src="{{ "assets/icons/youtube.svg" | relURL }}" alt="یوتیوب"></a>
+    <a href="https://t.me/TehlugGp"><img src="{{ "assets/icons/telegram.svg" | relURL }}" alt="تلگرام"></a>
+    <a href="https://instagram.com/tehlug"><img src="{{ "assets/icons/instagram.svg" | relURL }}" alt="اینستاگرام"></a>
+    <a href="https://github.com/tehlug"><img src="{{ "assets/icons/github.svg" | relURL }}" alt="گیتهاب"></a>
+  </div>
+  <div class="footer-actions">
+    <a class="footer-join" href="https://t.me/TehlugGp">عضویت</a>
+    <a href="/events/" aria-label="آرشیو">♙</a><a href="/gallery/" aria-label="گالری">▧</a><a href="/calendar/" aria-label="تقویم"><img src="{{ "assets/icons/calendar.svg" | relURL }}" alt=""></a>
+  </div>
+  <nav class="footer-menu" aria-label="منوی پایین صفحه"><a href="/news/">اخبار</a><a href="/topics/">موضوعات</a><a href="/about/">درباره ما</a><a href="/faq/">سوالات متداول</a><a href="/events/">رویدادها</a></nav>
+  <a class="footer-home" href="/">تهران‌لاگ</a>
 </footer>
