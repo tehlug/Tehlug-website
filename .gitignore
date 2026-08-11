@@ -8,3 +8,6 @@ resources/
 .hugo_build.lock
 event-post-v1-1-gallery.jpg
 *.woff2
+__pycache__/
+*.pyc
+schemas/
