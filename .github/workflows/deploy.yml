@@ -42,18 +42,15 @@ jobs:
           fetch-depth: 0
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
 
+      # relativeURLs is on in hugo.yaml, so do not override --baseURL with the
+      # /Tehlug-website/ project path or asset links become ./Tehlug-website/...
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
-        run: |
-          hugo \
-            --gc \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+        run: hugo --gc --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
