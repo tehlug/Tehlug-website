@@ -104,7 +104,7 @@
       {{ end }}
       {{ $latest := index $related 0 }}
       {{ $multi := gt (len $related) 1 }}
-      <article class="speaker-card{{ if $multi }} has-many{{ end }}"{{ if $multi }} data-speaker-card{{ end }}>
+      <article class="speaker-card{{ if $multi }} has-many{{ end }}"{{ if $multi }} data-speaker-card{{ else }} data-card{{ end }}>
         <h2>{{ $name }}</h2>
         <span class="speaker-count">{{ partial "fa-digits.html" (len $related) }} ارائه</span>
         <p class="speaker-latest">{{ with $latest }}{{ .Title }}{{ with .Params.date_text }} · {{ . }}{{ end }}{{ end }}</p>
@@ -124,7 +124,7 @@
             </div>
           </div>
           {{ else }}
-          {{ with $latest }}<a class="speaker-link" href="{{ .RelPermalink }}">مشاهده رویداد ←</a>{{ end }}
+          {{ with $latest }}<a class="speaker-link card-link" href="{{ .RelPermalink }}">مشاهده رویداد ←</a>{{ end }}
           {{ end }}
         </div>
       </article>
