@@ -330,12 +330,84 @@ const initializeGalleryLightbox = () => {
   );
 };
 
+const initializePageMotion = () => {
+  const root = document.documentElement;
+  const elements = Array.from(document.querySelectorAll("[data-reveal]"));
+  const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const revealAll = () => {
+    elements.forEach((element) => element.classList.add("is-visible"));
+    root.classList.add("is-loaded");
+  };
+
+  if (prefersReduced || !("IntersectionObserver" in window)) {
+    revealAll();
+    return;
+  }
+
+  const revealInView = () => {
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 0.92 && rect.bottom > 40) {
+        element.classList.add("is-visible");
+      }
+    });
+  };
+
+  // Wait two frames so the initial hidden state paints, then play the entrance.
+  window.requestAnimationFrame(() => {
+    window.requestAnimationFrame(() => {
+      root.classList.add("is-loaded");
+      revealInView();
+    });
+  });
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    { rootMargin: "0px 0px -8% 0px", threshold: 0.12 },
+  );
+
+  elements.forEach((element) => observer.observe(element));
+};
+
+const initializeCardClicks = () => {
+  document.addEventListener("click", (event) => {
+    const card = event.target.closest("[data-card]");
+    if (!card) {
+      return;
+    }
+
+    // Let real links/buttons inside the card work normally.
+    if (event.target.closest("a, button, input, label, textarea, select")) {
+      return;
+    }
+
+    const link = card.querySelector("a.card-link, a[href]");
+    if (!link) {
+      return;
+    }
+
+    event.preventDefault();
+    window.location.href = link.href;
+  });
+};
+
 const boot = () => {
   initializeNavigation();
   initializeTopicSearch();
   initializeEventSectionSpy();
   initializeGalleryLightbox();
   initializePersianDigits();
+  initializePageMotion();
+  initializeCardClicks();
 };
 
 if (document.readyState === "loading") {
