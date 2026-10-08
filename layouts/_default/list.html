@@ -1,15 +1,100 @@
 {{ define "main" }}
 {{ if eq .Section "topics" }}
-<section class="page-heading shell"><p class="eyebrow-text">دانش جمعی ما</p><h1>موضوعات</h1><p>موضوعاتی که در نشست‌ها، گفتگوها و ارائه‌های تهران‌لاگ دنبال می‌کنیم.</p></section>
+<section class="page-heading shell"><p class="eyebrow-text">دانش جمعی ما</p><h1>موضوعات</h1><p>موضوعاتی که در نشست‌ها، گفتگوها و ارائه‌های تهران‌لاگ دنبال می‌کنیم. با انتخاب هر موضوع، رویدادهای مرتبط همین سایت را ببینید.</p></section>
 <section class="topics-page shell">
-  <label class="topic-search"><span>جستجو در موضوعات</span><input type="search" placeholder="مثلاً لینوکس، امنیت یا Rust"></label>
-  <div class="topic-cloud">
+  <label class="topic-search"><span>جستجو در موضوعات</span><input type="search" id="topic-search-input" placeholder="مثلاً لینوکس، امنیت یا Rust" autocomplete="off"></label>
+  <div class="topic-cloud" id="topic-cloud">
     {{ range site.Data.topics.items }}
-    <a href="{{ .source_url }}" target="_blank" rel="noopener">{{ .name }}</a>
+    {{ $id := printf "topic-%s" (.name | urlize) }}
+    {{ if eq (len .events) 1 }}
+    {{ $only := index .events 0 }}
+    <a class="topic-chip" href="{{ printf "/events/%s/" $only.slug | relURL }}" data-topic-name="{{ .name | lower }}">
+      <span class="topic-chip-name">{{ .name }}</span>
+      <span class="topic-chip-count">{{ partial "fa-digits.html" .count }}</span>
+    </a>
+    {{ else }}
+    <a class="topic-chip" href="#{{ $id }}" data-topic-name="{{ .name | lower }}" data-topic-link>
+      <span class="topic-chip-name">{{ .name }}</span>
+      <span class="topic-chip-count">{{ partial "fa-digits.html" .count }}</span>
+    </a>
+    {{ end }}
     {{ end }}
   </div>
-  <div id="topic-events" class="topic-event-list"><div class="section-heading"><h2>کاوش در آرشیو</h2></div><a href="https://tehlug.org/topics/" target="_blank" rel="noopener"><span>منبع اصلی</span>مشاهدهٔ همهٔ موضوعات و نشست‌های مرتبط در آرشیو تهران‌لاگ<b>←</b></a></div>
+  <div id="topic-events" class="topic-event-list">
+    <div class="section-heading">
+      <h2>رویدادهای مرتبط</h2>
+      <p class="topic-events-hint" data-topic-hint>یک موضوع را از بالا انتخاب کنید تا رویدادهایش اینجا دیده شود.</p>
+    </div>
+    {{ range site.Data.topics.items }}
+    {{ if gt (len .events) 1 }}
+    {{ $id := printf "topic-%s" (.name | urlize) }}
+    <div class="topic-event-block" id="{{ $id }}" hidden data-topic-block>
+      <div class="topic-event-block-head">
+        <h3>{{ .name }}</h3>
+        <span class="topic-chip-count">{{ partial "fa-digits.html" .count }}</span>
+      </div>
+      <div class="topic-event-cloud">
+        {{ range .events }}
+        <a class="topic-event-chip" href="{{ printf "/events/%s/" .slug | relURL }}">
+          <span class="topic-chip-name">{{ .title }}</span>
+          <span class="topic-event-chip-date">
+            <img src="{{ "assets/icons/calendar.svg" | relURL }}" alt="" width="14" height="14">
+            <time>{{ with .date }}{{ . }}{{ else }}—{{ end }}</time>
+          </span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+    {{ end }}
+  </div>
 </section>
+<script>
+(() => {
+  const input = document.getElementById("topic-search-input");
+  const links = [...document.querySelectorAll("[data-topic-link]")];
+  const blocks = [...document.querySelectorAll("[data-topic-block]")];
+  const hint = document.querySelector("[data-topic-hint]");
+
+  const showBlock = (id) => {
+    blocks.forEach((block) => {
+      block.hidden = !(id && block.id === id);
+    });
+    links.forEach((link) => {
+      link.classList.toggle("is-active", (link.getAttribute("href") || "") === `#${id}`);
+    });
+    if (hint) {
+      hint.hidden = Boolean(id);
+    }
+  };
+
+  const syncFromHash = () => {
+    const id = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+    showBlock(id || null);
+    if (id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      const id = (link.getAttribute("href") || "").replace(/^#/, "");
+      showBlock(id);
+    });
+  });
+
+  input?.addEventListener("input", () => {
+    const q = (input.value || "").trim().toLowerCase();
+    links.forEach((link) => {
+      const name = link.dataset.topicName || "";
+      link.hidden = Boolean(q) && !name.includes(q);
+    });
+  });
+
+  window.addEventListener("hashchange", syncFromHash);
+  syncFromHash();
+})();
+</script>
 {{ else }}
 <section class="page-heading shell"><h1>{{ .Title }}</h1></section>
 {{ end }}

@@ -19,8 +19,6 @@ gallery:
   - "assets/images/archive/events/debian_kde/007.webp"
   - "assets/images/archive/events/debian_kde/008.webp"
 gallery_total: 30
-gallery_url: "https://tehlug.org/events/debian_kde/gallery/"
-source_url: "https://tehlug.org/events/debian_kde/info/"
 ---
 گروه کاربران لینوکس تهران، هفته‌ی گذشته روز پنج شنبه، بیست و یکم بهمن ماه سال ۱۳۸۹ جشن انتشاری به مناسبت منتشر شدن نسخه‌ی ۴.۶ پروژه‌ی کی-دی-ای و نسخه‌ی ششم توزیع دبیان موسوم به اسکوئیز در کافه پراگ برگزار کرد.
 در این جشن انتشار که در فضایی صمیمی و دوستانه برگزار شد، تعداد بسیاری از علاقه‌مندان به این دو پروژه‌ی آزاد، چند ساعتی را در کنار هم سپری کردند و به گپ و گفتگو با یکدیگر پرداختند.

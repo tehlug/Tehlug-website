@@ -44,9 +44,10 @@ const initializePersianDigits = () => {
 
 const initializeNavigation = () => {
   const checkbox = document.querySelector(".site-nav-checkbox");
-  const desktopQuery = window.matchMedia("(min-width: 40.01rem)");
+  const nav = document.querySelector(".site-nav");
+  const desktopQuery = window.matchMedia("(min-width: 1051px)");
 
-  if (!checkbox) {
+  if (!checkbox || !nav) {
     return;
   }
 
@@ -172,9 +173,8 @@ const initializeEventSectionSpy = () => {
 };
 
 const initializeGalleryLightbox = () => {
-  const root = document.querySelector("[data-gallery-root]");
   const lightbox = document.querySelector("[data-lightbox]");
-  if (!root || !lightbox) {
+  if (!lightbox) {
     return;
   }
 
@@ -251,14 +251,14 @@ const initializeGalleryLightbox = () => {
     render();
   };
 
-  root.addEventListener("click", (event) => {
+  document.addEventListener("click", (event) => {
     const trigger = event.target.closest("[data-lightbox-item]");
-    if (!trigger || !root.contains(trigger)) {
+    if (!trigger) {
       return;
     }
 
     event.preventDefault();
-    const group = trigger.closest("[data-lightbox-group]") || root;
+    const group = trigger.closest("[data-lightbox-group]") || document;
     const groupItems = Array.from(group.querySelectorAll("[data-lightbox-item]")).map((node) => ({
       src: node.getAttribute("href"),
       caption: node.getAttribute("data-caption") || "",
@@ -271,11 +271,6 @@ const initializeGalleryLightbox = () => {
   });
 
   lightbox.addEventListener("click", (event) => {
-    if (event.target.closest("[data-lightbox-close]")) {
-      event.preventDefault();
-      close();
-      return;
-    }
     if (event.target.closest("[data-lightbox-prev]")) {
       event.preventDefault();
       showPrev();
@@ -284,7 +279,14 @@ const initializeGalleryLightbox = () => {
     if (event.target.closest("[data-lightbox-next]")) {
       event.preventDefault();
       showNext();
+      return;
     }
+    // Close on any click except the photo itself (and nav arrows above).
+    if (event.target.closest("[data-lightbox-image]")) {
+      return;
+    }
+    event.preventDefault();
+    close();
   });
 
   document.addEventListener("keydown", (event) => {

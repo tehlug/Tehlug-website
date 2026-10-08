@@ -16,7 +16,6 @@
       <span class="pill">{{ .Params.status }}</span>
       <h1>{{ .Title }} تهران‌لاگ</h1>
       {{ .Content }}
-      <a class="source-link" href="{{ .Params.source_url }}" target="_blank" rel="noopener">مشاهده در وب‌سایت اصلی تهران‌لاگ ↗</a>
     </section>
 
     <section id="schedule" class="event-section">
@@ -46,9 +45,15 @@
     </section>
 
     <section id="gallery" class="content-section event-section">
-      <div class="section-heading"><h2>گالری رویداد</h2>{{ with .Params.gallery_url }}<a class="source-link" href="{{ . }}" target="_blank" rel="noopener">مشاهدهٔ گالری کامل ↗</a>{{ end }}</div>
+      <div class="section-heading"><h2>گالری رویداد</h2></div>
       {{ with .Params.gallery }}
-      <div class="gallery-grid">{{ range . }}<a class="gallery-item gallery-photo" href="{{ . | relURL }}" target="_blank"><img src="{{ . | relURL }}" alt="تصویری از {{ $.Title }}" loading="lazy"></a>{{ end }}</div>
+      <div class="gallery-grid" data-lightbox-group>
+        {{ range . }}
+        <a class="gallery-item gallery-photo" href="{{ . | relURL }}" data-lightbox-item data-caption="{{ $.Title }}">
+          <img src="{{ . | relURL }}" alt="تصویری از {{ $.Title }}" loading="lazy">
+        </a>
+        {{ end }}
+      </div>
       {{ else }}
       <p class="empty-gallery">برای این رویداد تصویر منتشر نشده است.</p>
       {{ end }}

@@ -6,7 +6,7 @@
       <h1 id="home-title">با هم، آزادتر می‌سازیم.</h1>
       <p class="home-lead">تهران‌لاگ فضایی برای یادگیری، گفتگو و به اشتراک گذاشتن تجربه‌های واقعی در دنیای گنو/لینوکس و نرم‌افزار آزاد است.</p>
       <div class="home-actions">
-        <a class="home-button home-button-primary" href="https://t.me/TehlugGp">عضویت در جامعه</a>
+        <a class="home-button home-button-primary" href="https://t.me/TehlugGp">کانال تلگرام</a>
         <a class="home-button home-button-quiet" href="/about/">بیشتر دربارهٔ ما <span aria-hidden="true">←</span></a>
       </div>
       <div class="home-numbers" aria-label="آمار تهران‌لاگ">
@@ -15,11 +15,11 @@
         <div><strong>۱۳۸۴</strong><span>سال آغاز</span></div>
       </div>
     </div>
-    <article class="home-featured-event" aria-labelledby="next-event-title">
+    <article class="home-featured-event" aria-labelledby="featured-event-title">
       <div class="home-event-art home-event-poster"><img src="{{ "assets/images/archive/events/280/poster.webp" | relURL }}" alt="پوستر جلسه ۲۸۰ تهران‌لاگ"></div>
       <div class="home-featured-copy">
-        <span class="home-label">رویداد بعدی</span>
-        <h2 id="next-event-title">جلسه ۲۸۰<br>تهران‌لاگ</h2>
+        <span class="home-label is-held">برگزار شده</span>
+        <h2 id="featured-event-title">جلسه ۲۸۰<br>تهران‌لاگ</h2>
         <ul>
           <li><img src="{{ "assets/icons/calendar.svg" | relURL }}" alt="">۷ آذر ۱۴۰۴، ساعت ۱۱:۳۰ تا ۱۷:۳۰</li>
           <li><img src="{{ "assets/icons/map-location.svg" | relURL }}" alt="">دانشگاه صنعتی امیرکبیر</li>
@@ -33,17 +33,16 @@
     <div class="shell">
       <header class="home-section-header"><div><p>از دل جامعه</p><h2>رویدادها و دورهمی‌ها</h2></div><a href="/events/">همهٔ رویدادها <span aria-hidden="true">←</span></a></header>
       <div class="home-event-grid">
-        {{ range $i, $event := slice (dict "slug" "280" "number" "۲۸۰" "date" "۷ آذر ۱۴۰۴" "place" "دانشگاه صنعتی امیرکبیر") (dict "slug" "279" "number" "۲۷۹" "date" "۲۵ اردیبهشت ۱۴۰۴" "place" "دانشگاه صنعتی امیرکبیر") (dict "slug" "278" "number" "۲۷۸" "date" "۹ اسفند ۱۴۰۳" "place" "دیجی‌نکست") }}
+        {{ range $event := slice (dict "slug" "280" "number" "۲۸۰" "date" "۷ آذر ۱۴۰۴" "place" "دانشگاه صنعتی امیرکبیر" "poster" "assets/images/archive/events/280/poster.webp") (dict "slug" "279" "number" "۲۷۹" "date" "۲۵ اردیبهشت ۱۴۰۴" "place" "دانشگاه صنعتی امیرکبیر") (dict "slug" "278" "number" "۲۷۸" "date" "۹ اسفند ۱۴۰۳" "place" "دیجی‌نکست") }}
         <article class="home-event-card">
-          {{ if eq $i 0 }}
-          <div class="home-event-card-art home-event-card-cube" data-home-cube data-number="{{ $event.number }}" data-label="TEHLUG" aria-label="جلسه {{ $event.number }}">
-            <canvas></canvas>
-            <div class="home-event-card-cube-fallback" hidden><span>TEHLUG</span><strong>{{ $event.number }}</strong></div>
+          {{ with $event.poster }}
+          <div class="home-event-card-art home-event-card-photo">
+            <img src="{{ . | relURL }}" alt="پوستر جلسه {{ $event.number }}">
           </div>
           {{ else }}
           <div class="home-event-card-art"><span>TEHLUG</span><strong>{{ $event.number }}</strong></div>
           {{ end }}
-          <div class="home-event-card-copy"><span class="home-status{{ if $event.cancelled }} is-cancelled{{ end }}">{{ if $event.cancelled }}لغو شده{{ else }}برگزار شده{{ end }}</span><h3>جلسه {{ $event.number }}</h3><p>{{ $event.date }}</p><p>{{ $event.place }}</p><a href="/events/{{ $event.slug }}/">جزئیات <span aria-hidden="true">←</span></a></div>
+          <div class="home-event-card-copy"><span class="home-status">برگزار شده</span><h3>جلسه {{ $event.number }}</h3><p>{{ $event.date }}</p><p>{{ $event.place }}</p><a href="/events/{{ $event.slug }}/">جزئیات <span aria-hidden="true">←</span></a></div>
         </article>
         {{ end }}
       </div>
@@ -58,15 +57,4 @@
     </div>
   </section>
 </div>
-{{ end }}
-
-{{ define "scripts" }}
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js"
-  }
-}
-</script>
-<script type="module" src="{{ "assets/js/home-cube.js" | relURL }}"></script>
 {{ end }}

@@ -2,7 +2,6 @@
 title: "صفحه یادبود اشکان قاسمی"
 url: "/news/ashkan/"
 date_text: "۱۴۰۱-۶-۲۵"
-source_url: "https://tehlug.org/news/ashkan/"
 ---
 
 اشکان قاسمی یکی از بنیانگزاران تهران لاگ بود.

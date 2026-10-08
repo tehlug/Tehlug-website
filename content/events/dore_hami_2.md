@@ -19,7 +19,5 @@ gallery:
   - "assets/images/archive/events/dore_hami_2/007.webp"
   - "assets/images/archive/events/dore_hami_2/008.webp"
 gallery_total: 9
-gallery_url: "https://tehlug.org/events/dore_hami_2/gallery/"
-source_url: "https://tehlug.org/events/dore_hami_2/info/"
 ---
 دومین دورهمی عمومی گروه کاربران لینوکس تهران

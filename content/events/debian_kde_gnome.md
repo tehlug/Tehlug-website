@@ -19,8 +19,6 @@ gallery:
   - "assets/images/archive/events/debian_kde_gnome/007.webp"
   - "assets/images/archive/events/debian_kde_gnome/008.webp"
 gallery_total: 49
-gallery_url: "https://tehlug.org/events/debian_kde_gnome/gallery/"
-source_url: "https://tehlug.org/events/debian_kde_gnome/info/"
 ---
 باز هم بهانه‌ای دیگر پیدا کردیم تا ما طرفداران نرم‌افزارهای آزاد دور هم جمع شویم و بگیم و بخندیم و کیک بخوریم!
 دوستانی که با مراسم‌های گنو/لینوکسی مثل جشن انتشار اوبونتو آشنایی دارن باید بگوییم این جشن یکم با قبلی ها فرق داره و خبری از سمینار و ورک‌شاپ و اینا نیست! تصاویر جشن قبلی را هم می‌توانید در این صفحه ببینید تا کاملا متوجه موضوع بشوید.

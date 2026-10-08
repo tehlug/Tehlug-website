@@ -6,7 +6,6 @@
     <div class="about-intro prose-card">{{ .Content }}</div>
     <div class="about-stat"><span>از سال</span><strong>{{ partial "fa-digits.html" 1384 }}</strong><small>همراه جامعهٔ متن‌باز</small></div>
     <div class="about-why prose-card"><h2>چرا تهران‌لاگ؟</h2><p>تهران‌لاگ محلی برای تبادل نظر، یادگیری گنو/لینوکس، دنبال‌کردن تحولات نرم‌افزار آزاد و تبدیل ایده‌های تازه به همکاری‌های واقعی است.</p></div>
-    <section class="founders"><div class="section-heading"><h2>موسسان نخستین</h2></div><div class="people-grid">{{ range slice "آرش حسامی" "محمد درویش" "بهنام بهجت مرندی" "نوید عبدی" "علی پوریان" "سید سینا سالک" "محمد وزیریان" "محسن پهلوان‌زاده" "علی رستگار" "آرمین رنجبر" "ایریکس" }}<div><i>{{ slicestr . 0 1 }}</i><span>{{ . }}</span></div>{{ end }}</div></section>
   </section>
 
   {{ else if eq .Params.page_kind "gallery" }}
@@ -38,7 +37,6 @@
               </div>
               <div class="gallery-album-actions">
                 <a href="{{ $event.RelPermalink }}">صفحه رویداد</a>
-                {{ with $event.Params.gallery_url }}<a href="{{ . }}" target="_blank" rel="noopener">آرشیو کامل ↗</a>{{ end }}
               </div>
             </header>
             <div class="gallery-album-mosaic" data-lightbox-group>
@@ -66,21 +64,7 @@
       </div>
     </div>
 
-    <p class="gallery-credit">تصاویر از آرشیو منتشرشدهٔ <a href="https://tehlug.org/images/" target="_blank" rel="noopener">تهران‌لاگ</a> وارد شده‌اند و از جدیدترین رویداد به قدیمی‌ترین چیده شده‌اند.</p>
-
-    <div class="lightbox is-hidden" id="gallery-lightbox" hidden data-lightbox aria-hidden="true">
-      <div class="lightbox-backdrop" data-lightbox-close></div>
-      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
-        <button type="button" class="lightbox-close" data-lightbox-close aria-label="بستن">×</button>
-        <button type="button" class="lightbox-nav lightbox-prev" data-lightbox-prev aria-label="تصویر قبلی">‹</button>
-        <figure class="lightbox-stage">
-          <img src="" alt="" data-lightbox-image>
-          <figcaption data-lightbox-caption></figcaption>
-        </figure>
-        <button type="button" class="lightbox-nav lightbox-next" data-lightbox-next aria-label="تصویر بعدی">›</button>
-        <p class="lightbox-counter"><span data-lightbox-current>۱</span> / <span data-lightbox-total>۱</span></p>
-      </div>
-    </div>
+    <p class="gallery-credit">تصاویر رویدادها از آرشیو تهران‌لاگ وارد شده‌اند و از جدیدترین رویداد به قدیمی‌ترین چیده شده‌اند.</p>
   </section>
 
   {{ else if eq .Params.page_kind "speakers" }}
@@ -119,15 +103,76 @@
         {{ end }}
       {{ end }}
       {{ $latest := index $related 0 }}
-      <article>
-        <i>{{ slicestr $name 0 1 }}</i>
-        <span>{{ partial "fa-digits.html" (len $related) }} ارائه</span>
+      {{ $multi := gt (len $related) 1 }}
+      <article class="speaker-card{{ if $multi }} has-many{{ end }}"{{ if $multi }} data-speaker-card{{ end }}>
         <h2>{{ $name }}</h2>
-        <p>{{ with $latest }}{{ .Title }}{{ if .Params.date_text }} · {{ .Params.date_text }}{{ end }}{{ end }}</p>
-        {{ with $latest }}<a href="{{ .RelPermalink }}">مشاهده رویداد ←</a>{{ end }}
+        <span class="speaker-count">{{ partial "fa-digits.html" (len $related) }} ارائه</span>
+        <p class="speaker-latest">{{ with $latest }}{{ .Title }}{{ with .Params.date_text }} · {{ . }}{{ end }}{{ end }}</p>
+        <div class="speaker-actions">
+          {{ if $multi }}
+          <div class="speaker-picker" data-speaker-picker>
+            <button type="button" class="speaker-picker-btn" data-speaker-picker-btn aria-expanded="false">
+              انتخاب ارائه <span aria-hidden="true">▾</span>
+            </button>
+            <div class="speaker-picker-menu" data-speaker-picker-menu hidden>
+              {{ range $related }}
+              <a href="{{ .RelPermalink }}">
+                <strong>{{ .Title }}</strong>
+                {{ with .Params.date_text }}<span>{{ . }}</span>{{ end }}
+              </a>
+              {{ end }}
+            </div>
+          </div>
+          {{ else }}
+          {{ with $latest }}<a class="speaker-link" href="{{ .RelPermalink }}">مشاهده رویداد ←</a>{{ end }}
+          {{ end }}
+        </div>
       </article>
     {{ end }}
   </section>
+  <script>
+  (() => {
+    const pickers = [...document.querySelectorAll("[data-speaker-picker]")];
+    if (!pickers.length) return;
+
+    const closeAll = () => {
+      pickers.forEach((picker) => {
+        picker.classList.remove("is-open");
+        picker.closest("[data-speaker-card]")?.classList.remove("is-open");
+        const btn = picker.querySelector("[data-speaker-picker-btn]");
+        const menu = picker.querySelector("[data-speaker-picker-menu]");
+        if (btn) btn.setAttribute("aria-expanded", "false");
+        if (menu) menu.hidden = true;
+      });
+    };
+
+    pickers.forEach((picker) => {
+      const btn = picker.querySelector("[data-speaker-picker-btn]");
+      const menu = picker.querySelector("[data-speaker-picker-menu]");
+      const card = picker.closest("[data-speaker-card]");
+      if (!btn || !menu) return;
+
+      btn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const open = picker.classList.contains("is-open");
+        closeAll();
+        if (!open) {
+          picker.classList.add("is-open");
+          card?.classList.add("is-open");
+          btn.setAttribute("aria-expanded", "true");
+          menu.hidden = false;
+        }
+      });
+
+      menu.addEventListener("click", (event) => event.stopPropagation());
+    });
+
+    document.addEventListener("click", () => closeAll());
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeAll();
+    });
+  })();
+  </script>
   {{ if gt $totalPages 1 }}
   <nav class="pager" aria-label="صفحه‌بندی ارائه‌دهندگان">
     {{ if gt $current 1 }}
@@ -159,10 +204,26 @@
   </nav>
   {{ end }}
 
+  {{ else if eq .Params.page_kind "calendar" }}
+  <section class="calendar-page shell">
+    <div class="calendar-soon">
+      <p class="calendar-soon-kicker">زمان‌بندی جامعه</p>
+      <h1>تقویم رویدادها</h1>
+      <span class="calendar-soon-badge">به‌زودی</span>
+      <h2>رویداد بعدی به‌زودی…</h2>
+      <p>جلسهٔ بعدی تهران‌لاگ هنوز نهایی نشده است. به‌محض مشخص شدن زمان و مکان، همین‌جا اعلام می‌کنیم. تا آن موقع می‌توانید در کانال تلگرام همراه ما باشید و از اخبار و گفتگوهای جامعه باخبر شوید.</p>
+      <div class="calendar-soon-actions">
+        <a class="button button-dark" href="https://t.me/TehlugGp">کانال تلگرام</a>
+        <a class="button button-quiet" href="{{ "/events/" | relURL }}">آرشیو رویدادها</a>
+      </div>
+    </div>
+  </section>
+
   {{ else }}
-  <section class="simple-page shell"><div class="page-heading"><h1>{{ .Title }}</h1></div><div class="prose-card">{{ .Content }}<p>برای پرسش‌ها، پیشنهادها یا همکاری با تهران‌لاگ، از طریق کانال تلگرام با ما در ارتباط باشید.</p><a class="button button-dark" href="https://t.me/TehlugGp">عضویت در جامعه</a></div></section>
+  <section class="simple-page shell"><div class="page-heading"><h1>{{ .Title }}</h1></div><div class="prose-card">{{ .Content }}<p>برای پرسش‌ها، پیشنهادها یا همکاری با تهران‌لاگ، از طریق کانال تلگرام با ما در ارتباط باشید.</p><a class="button button-dark" href="https://t.me/TehlugGp">کانال تلگرام</a></div></section>
   {{ end }}
 {{ else }}
   <article class="simple-page shell"><div class="page-heading"><h1>{{ .Title }}</h1></div><div class="prose-card">{{ .Content }}</div></article>
 {{ end }}
 {{ end }}
+

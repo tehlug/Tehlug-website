@@ -2,7 +2,6 @@
 title: "هماهنگی جلسات"
 url: "/news/coordination_meeting/"
 date_text: "۱۴۰۲-۴-۲۶"
-source_url: "https://tehlug.org/news/coordination_meeting/"
 ---
 
 به منظور هماهنگی امور جلسات آینده تهران‌لاگ و تقسیم کارها، جلسه‌ای در روز چهارشنبه مورخ ۲۸ تیر ساعت ۱۸:۳۰ در محل پارک آب و آتش برگزار خواهد شد.

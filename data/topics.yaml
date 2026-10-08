@@ -1,636 +1,1648 @@
 items:
-  - name: "تهران‌لاگ"
-    source_url: "https://tehlug.org/topics/index.xml\" title=تهران‌لاگ><meta property=\"og:url\" content=\"http:/tehlug.org/topics/"
-  - name: "اخبار:
-۱۶"
-    source_url: "https://tehlug.org/topics/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1/"
-  - name: "هماهنگی جلسات:
-۱۳"
-    source_url: "https://tehlug.org/topics/%D9%87%D9%85%D8%A7%D9%87%D9%86%DA%AF%DB%8C-%D8%AC%D9%84%D8%B3%D8%A7%D8%AA/"
-  - name: "نرم‌افزار آزاد:
-۱۲"
-    source_url: "https://tehlug.org/topics/%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF/"
-  - name: "python:
-۹"
-    source_url: "https://tehlug.org/topics/python/"
-  - name: "devops:
-۶"
-    source_url: "https://tehlug.org/topics/devops/"
-  - name: "js:
-۶"
-    source_url: "https://tehlug.org/topics/js/"
-  - name: "مهندسی نرم‌افزار:
-۶"
-    source_url: "https://tehlug.org/topics/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1/"
-  - name: "kubernetes:
-۵"
-    source_url: "https://tehlug.org/topics/kubernetes/"
-  - name: "version control:
-۵"
-    source_url: "https://tehlug.org/topics/version-control/"
-  - name: "kernel:
-۴"
-    source_url: "https://tehlug.org/topics/kernel/"
-  - name: "linux:
-۴"
-    source_url: "https://tehlug.org/topics/linux/"
-  - name: "ایران تاکس:
-۴"
-    source_url: "https://tehlug.org/topics/%D8%A7%DB%8C%D8%B1%D8%A7%D9%86-%D8%AA%D8%A7%DA%A9%D8%B3/"
-  - name: "حقوقی:
-۴"
-    source_url: "https://tehlug.org/topics/%D8%AD%D9%82%D9%88%D9%82%DB%8C/"
-  - name: "api:
-۳"
-    source_url: "https://tehlug.org/topics/api/"
-  - name: "gnu/linux:
-۳"
-    source_url: "https://tehlug.org/topics/gnu/linux/"
-  - name: "go:
-۳"
-    source_url: "https://tehlug.org/topics/go/"
-  - name: "news:
-۳"
-    source_url: "https://tehlug.org/topics/news/"
-  - name: "اساسنامه:
-۳"
-    source_url: "https://tehlug.org/topics/%D8%A7%D8%B3%D8%A7%D8%B3%D9%86%D8%A7%D9%85%D9%87/"
-  - name: "امنیت:
-۳"
-    source_url: "https://tehlug.org/topics/%D8%A7%D9%85%D9%86%DB%8C%D8%AA/"
-  - name: "برنامه نویسی:
-۳"
-    source_url: "https://tehlug.org/topics/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C/"
-  - name: "سلام دنیا:
-۳"
-    source_url: "https://tehlug.org/topics/%D8%B3%D9%84%D8%A7%D9%85-%D8%AF%D9%86%DB%8C%D8%A7/"
-  - name: "akka:
-۲"
-    source_url: "https://tehlug.org/topics/akka/"
-  - name: "android:
-۲"
-    source_url: "https://tehlug.org/topics/android/"
-  - name: "bitcoin:
-۲"
-    source_url: "https://tehlug.org/topics/bitcoin/"
-  - name: "ci/cd:
-۲"
-    source_url: "https://tehlug.org/topics/ci/cd/"
-  - name: "cloud:
-۲"
-    source_url: "https://tehlug.org/topics/cloud/"
-  - name: "compiler:
-۲"
-    source_url: "https://tehlug.org/topics/compiler/"
-  - name: "event driven:
-۲"
-    source_url: "https://tehlug.org/topics/event-driven/"
-  - name: "fedora:
-۲"
-    source_url: "https://tehlug.org/topics/fedora/"
-  - name: "font:
-۲"
-    source_url: "https://tehlug.org/topics/font/"
-  - name: "gnome:
-۲"
-    source_url: "https://tehlug.org/topics/gnome/"
-  - name: "internationalization/localization:
-۲"
-    source_url: "https://tehlug.org/topics/internationalization/localization/"
-  - name: "log:
-۲"
-    source_url: "https://tehlug.org/topics/log/"
-  - name: "php:
-۲"
-    source_url: "https://tehlug.org/topics/php/"
-  - name: "ruby:
-۲"
-    source_url: "https://tehlug.org/topics/ruby/"
-  - name: "rust:
-۲"
-    source_url: "https://tehlug.org/topics/rust/"
-  - name: "scala:
-۲"
-    source_url: "https://tehlug.org/topics/scala/"
-  - name: "secure coding:
-۲"
-    source_url: "https://tehlug.org/topics/secure-coding/"
-  - name: "uefi:
-۲"
-    source_url: "https://tehlug.org/topics/uefi/"
-  - name: "استارتاپ:
-۲"
-    source_url: "https://tehlug.org/topics/%D8%A7%D8%B3%D8%AA%D8%A7%D8%B1%D8%AA%D8%A7%D9%BE/"
-  - name: "تولید محتوا:
-۲"
-    source_url: "https://tehlug.org/topics/%D8%AA%D9%88%D9%84%DB%8C%D8%AF-%D9%85%D8%AD%D8%AA%D9%88%D8%A7/"
-  - name: "دورهمی:
-۲"
-    source_url: "https://tehlug.org/topics/%D8%AF%D9%88%D8%B1%D9%87%D9%85%DB%8C/"
-  - name: "رفع اشکال:
-۲"
-    source_url: "https://tehlug.org/topics/%D8%B1%D9%81%D8%B9-%D8%A7%D8%B4%DA%A9%D8%A7%D9%84/"
-  - name: "پتنت:
-۲"
-    source_url: "https://tehlug.org/topics/%D9%BE%D8%AA%D9%86%D8%AA/"
-  - name: "کارگاه نصب:
-۲"
-    source_url: "https://tehlug.org/topics/%DA%A9%D8%A7%D8%B1%DA%AF%D8%A7%D9%87-%D9%86%D8%B5%D8%A8/"
-  - name: "ai:
-۱"
-    source_url: "https://tehlug.org/topics/ai/"
-  - name: "ai agent:
-۱"
-    source_url: "https://tehlug.org/topics/ai-agent/"
-  - name: "anonymous group:
-۱"
-    source_url: "https://tehlug.org/topics/anonymous-group/"
-  - name: "apache:
-۱"
-    source_url: "https://tehlug.org/topics/apache/"
-  - name: "app:
-۱"
-    source_url: "https://tehlug.org/topics/app/"
-  - name: "arduino:
-۱"
-    source_url: "https://tehlug.org/topics/arduino/"
-  - name: "arm:
-۱"
-    source_url: "https://tehlug.org/topics/arm/"
-  - name: "asp.net core:
-۱"
-    source_url: "https://tehlug.org/topics/asp.net-core/"
-  - name: "aws:
-۱"
-    source_url: "https://tehlug.org/topics/aws/"
-  - name: "bash:
-۱"
-    source_url: "https://tehlug.org/topics/bash/"
-  - name: "bash scripting:
-۱"
-    source_url: "https://tehlug.org/topics/bash-scripting/"
-  - name: "big data:
-۱"
-    source_url: "https://tehlug.org/topics/big-data/"
-  - name: "bootstrap:
-۱"
-    source_url: "https://tehlug.org/topics/bootstrap/"
-  - name: "bpms:
-۱"
-    source_url: "https://tehlug.org/topics/bpms/"
-  - name: "bsd:
-۱"
-    source_url: "https://tehlug.org/topics/bsd/"
-  - name: "buildroot:
-۱"
-    source_url: "https://tehlug.org/topics/buildroot/"
-  - name: "cdn:
-۱"
-    source_url: "https://tehlug.org/topics/cdn/"
-  - name: "chakra:
-۱"
-    source_url: "https://tehlug.org/topics/chakra/"
-  - name: "coding:
-۱"
-    source_url: "https://tehlug.org/topics/coding/"
-  - name: "community:
-۱"
-    source_url: "https://tehlug.org/topics/community/"
-  - name: "copy right:
-۱"
-    source_url: "https://tehlug.org/topics/copy-right/"
-  - name: "coreos:
-۱"
-    source_url: "https://tehlug.org/topics/coreos/"
-  - name: "create your own language:
-۱"
-    source_url: "https://tehlug.org/topics/create-your-own-language/"
-  - name: "cybersecurity:
-۱"
-    source_url: "https://tehlug.org/topics/cybersecurity/"
-  - name: "data center:
-۱"
-    source_url: "https://tehlug.org/topics/data-center/"
-  - name: "data grid:
-۱"
-    source_url: "https://tehlug.org/topics/data-grid/"
-  - name: "database:
-۱"
-    source_url: "https://tehlug.org/topics/database/"
-  - name: "db:
-۱"
-    source_url: "https://tehlug.org/topics/db/"
-  - name: "django:
-۱"
-    source_url: "https://tehlug.org/topics/django/"
-  - name: "django unicorn:
-۱"
-    source_url: "https://tehlug.org/topics/django-unicorn/"
-  - name: "dns:
-۱"
-    source_url: "https://tehlug.org/topics/dns/"
-  - name: "docker:
-۱"
-    source_url: "https://tehlug.org/topics/docker/"
-  - name: "drupal:
-۱"
-    source_url: "https://tehlug.org/topics/drupal/"
-  - name: "e-commerce:
-۱"
-    source_url: "https://tehlug.org/topics/e-commerce/"
-  - name: "elastix:
-۱"
-    source_url: "https://tehlug.org/topics/elastix/"
-  - name: "electron:
-۱"
-    source_url: "https://tehlug.org/topics/electron/"
-  - name: "emacs:
-۱"
-    source_url: "https://tehlug.org/topics/emacs/"
-  - name: "embedded systems:
-۱"
-    source_url: "https://tehlug.org/topics/embedded-systems/"
-  - name: "erlang:
-۱"
-    source_url: "https://tehlug.org/topics/erlang/"
-  - name: "evolution of linux operating system network:
-۱"
-    source_url: "https://tehlug.org/topics/evolution-of-linux-operating-system-network/"
-  - name: "falco:
-۱"
-    source_url: "https://tehlug.org/topics/falco/"
-  - name: "floydhub:
-۱"
-    source_url: "https://tehlug.org/topics/floydhub/"
-  - name: "freedom:
-۱"
-    source_url: "https://tehlug.org/topics/freedom/"
-  - name: "front-end:
-۱"
-    source_url: "https://tehlug.org/topics/front-end/"
-  - name: "functional programming:
-۱"
-    source_url: "https://tehlug.org/topics/functional-programming/"
-  - name: "gaming:
-۱"
-    source_url: "https://tehlug.org/topics/gaming/"
-  - name: "gentoo:
-۱"
-    source_url: "https://tehlug.org/topics/gentoo/"
-  - name: "gimp:
-۱"
-    source_url: "https://tehlug.org/topics/gimp/"
-  - name: "git:
-۱"
-    source_url: "https://tehlug.org/topics/git/"
-  - name: "gitlab:
-۱"
-    source_url: "https://tehlug.org/topics/gitlab/"
-  - name: "hadoop:
-۱"
-    source_url: "https://tehlug.org/topics/hadoop/"
-  - name: "heartbleed:
-۱"
-    source_url: "https://tehlug.org/topics/heartbleed/"
-  - name: "ids:
-۱"
-    source_url: "https://tehlug.org/topics/ids/"
-  - name: "internet:
-۱"
-    source_url: "https://tehlug.org/topics/internet/"
-  - name: "iot:
-۱"
-    source_url: "https://tehlug.org/topics/iot/"
-  - name: "irc:
-۱"
-    source_url: "https://tehlug.org/topics/irc/"
-  - name: "it's your legacy:
-۱"
-    source_url: "https://tehlug.org/topics/its-your-legacy/"
-  - name: "janus:
-۱"
-    source_url: "https://tehlug.org/topics/janus/"
-  - name: "joomla:
-۱"
-    source_url: "https://tehlug.org/topics/joomla/"
-  - name: "k8s:
-۱"
-    source_url: "https://tehlug.org/topics/k8s/"
-  - name: "kde:
-۱"
-    source_url: "https://tehlug.org/topics/kde/"
-  - name: "latex:
-۱"
-    source_url: "https://tehlug.org/topics/latex/"
-  - name: "libnanomsg:
-۱"
-    source_url: "https://tehlug.org/topics/libnanomsg/"
-  - name: "liferay:
-۱"
-    source_url: "https://tehlug.org/topics/liferay/"
-  - name: "llm:
-۱"
-    source_url: "https://tehlug.org/topics/llm/"
-  - name: "lxd:
-۱"
-    source_url: "https://tehlug.org/topics/lxd/"
-  - name: "matrix:
-۱"
-    source_url: "https://tehlug.org/topics/matrix/"
-  - name: "media:
-۱"
-    source_url: "https://tehlug.org/topics/media/"
-  - name: "memory:
-۱"
-    source_url: "https://tehlug.org/topics/memory/"
-  - name: "message oriented middleware:
-۱"
-    source_url: "https://tehlug.org/topics/message-oriented-middleware/"
-  - name: "mlops:
-۱"
-    source_url: "https://tehlug.org/topics/mlops/"
-  - name: "mongodb:
-۱"
-    source_url: "https://tehlug.org/topics/mongodb/"
-  - name: "next cloud:
-۱"
-    source_url: "https://tehlug.org/topics/next-cloud/"
-  - name: "nginx:
-۱"
-    source_url: "https://tehlug.org/topics/nginx/"
-  - name: "nic:
-۱"
-    source_url: "https://tehlug.org/topics/nic/"
-  - name: "node js:
-۱"
-    source_url: "https://tehlug.org/topics/node-js/"
-  - name: "npm:
-۱"
-    source_url: "https://tehlug.org/topics/npm/"
-  - name: "openrisc:
-۱"
-    source_url: "https://tehlug.org/topics/openrisc/"
-  - name: "owncloud:
-۱"
-    source_url: "https://tehlug.org/topics/owncloud/"
-  - name: "p2p currency:
-۱"
-    source_url: "https://tehlug.org/topics/p2p-currency/"
-  - name: "packet injection:
-۱"
-    source_url: "https://tehlug.org/topics/packet-injection/"
-  - name: "parsidora:
-۱"
-    source_url: "https://tehlug.org/topics/parsidora/"
-  - name: "php/curl:
-۱"
-    source_url: "https://tehlug.org/topics/php/curl/"
-  - name: "physics:
-۱"
-    source_url: "https://tehlug.org/topics/physics/"
-  - name: "pilotlogic codetyphon:
-۱"
-    source_url: "https://tehlug.org/topics/pilotlogic-codetyphon/"
-  - name: "postgres:
-۱"
-    source_url: "https://tehlug.org/topics/postgres/"
-  - name: "privacy:
-۱"
-    source_url: "https://tehlug.org/topics/privacy/"
-  - name: "product management:
-۱"
-    source_url: "https://tehlug.org/topics/product-management/"
-  - name: "proxmox:
-۱"
-    source_url: "https://tehlug.org/topics/proxmox/"
-  - name: "pyreveal:
-۱"
-    source_url: "https://tehlug.org/topics/pyreveal/"
-  - name: "qt:
-۱"
-    source_url: "https://tehlug.org/topics/qt/"
-  - name: "quantom:
-۱"
-    source_url: "https://tehlug.org/topics/quantom/"
-  - name: "raspberry pi:
-۱"
-    source_url: "https://tehlug.org/topics/raspberry-pi/"
-  - name: "reactive manifesto:
-۱"
-    source_url: "https://tehlug.org/topics/reactive-manifesto/"
-  - name: "release strategy:
-۱"
-    source_url: "https://tehlug.org/topics/release-strategy/"
-  - name: "remastersys:
-۱"
-    source_url: "https://tehlug.org/topics/remastersys/"
-  - name: "scalability/availability/stability:
-۱"
-    source_url: "https://tehlug.org/topics/scalability/availability/stability/"
-  - name: "scanqt:
-۱"
-    source_url: "https://tehlug.org/topics/scanqt/"
-  - name: "scrapy:
-۱"
-    source_url: "https://tehlug.org/topics/scrapy/"
-  - name: "semantic web:
-۱"
-    source_url: "https://tehlug.org/topics/semantic-web/"
-  - name: "serverless:
-۱"
-    source_url: "https://tehlug.org/topics/serverless/"
-  - name: "shellcode:
-۱"
-    source_url: "https://tehlug.org/topics/shellcode/"
-  - name: "sinatra:
-۱"
-    source_url: "https://tehlug.org/topics/sinatra/"
-  - name: "soc:
-۱"
-    source_url: "https://tehlug.org/topics/soc/"
-  - name: "social:
-۱"
-    source_url: "https://tehlug.org/topics/social/"
-  - name: "socket:
-۱"
-    source_url: "https://tehlug.org/topics/socket/"
-  - name: "spam:
-۱"
-    source_url: "https://tehlug.org/topics/spam/"
-  - name: "startingup:
-۱"
-    source_url: "https://tehlug.org/topics/startingup/"
-  - name: "storage:
-۱"
-    source_url: "https://tehlug.org/topics/storage/"
-  - name: "svelte:
-۱"
-    source_url: "https://tehlug.org/topics/svelte/"
-  - name: "tdd:
-۱"
-    source_url: "https://tehlug.org/topics/tdd/"
-  - name: "telegram bot:
-۱"
-    source_url: "https://tehlug.org/topics/telegram-bot/"
-  - name: "ubuntu touch:
-۱"
-    source_url: "https://tehlug.org/topics/ubuntu-touch/"
-  - name: "udev:
-۱"
-    source_url: "https://tehlug.org/topics/udev/"
-  - name: "ux:
-۱"
-    source_url: "https://tehlug.org/topics/ux/"
-  - name: "vagrant:
-۱"
-    source_url: "https://tehlug.org/topics/vagrant/"
-  - name: "virtualization:
-۱"
-    source_url: "https://tehlug.org/topics/virtualization/"
-  - name: "wagtill:
-۱"
-    source_url: "https://tehlug.org/topics/wagtill/"
-  - name: "wasm:
-۱"
-    source_url: "https://tehlug.org/topics/wasm/"
-  - name: "web server:
-۱"
-    source_url: "https://tehlug.org/topics/web-server/"
-  - name: "web3:
-۱"
-    source_url: "https://tehlug.org/topics/web3/"
-  - name: "windows:
-۱"
-    source_url: "https://tehlug.org/topics/windows/"
-  - name: "wireless:
-۱"
-    source_url: "https://tehlug.org/topics/wireless/"
-  - name: "xmpp:
-۱"
-    source_url: "https://tehlug.org/topics/xmpp/"
-  - name: "xp:
-۱"
-    source_url: "https://tehlug.org/topics/xp/"
-  - name: "yii2:
-۱"
-    source_url: "https://tehlug.org/topics/yii2/"
-  - name: "zsh:
-۱"
-    source_url: "https://tehlug.org/topics/zsh/"
-  - name: "آزادی‌های دیجیتال:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C%D9%87%D8%A7%DB%8C-%D8%AF%DB%8C%D8%AC%DB%8C%D8%AA%D8%A7%D9%84/"
-  - name: "آموزش آکادمیک:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%A2%DA%A9%D8%A7%D8%AF%D9%85%DB%8C%DA%A9/"
-  - name: "آینده کسب و کارهای سیستم های متن باز:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A2%DB%8C%D9%86%D8%AF%D9%87-%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D9%87%D8%A7%DB%8C-%D9%85%D8%AA%D9%86-%D8%A8%D8%A7%D8%B2/"
-  - name: "ارائه مطلب:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A7%D8%B1%D8%A7%D8%A6%D9%87-%D9%85%D8%B7%D9%84%D8%A8/"
-  - name: "اف‌دروید:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A7%D9%81%D8%AF%D8%B1%D9%88%DB%8C%D8%AF/"
-  - name: "اقتصاد متن باز:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D9%85%D8%AA%D9%86-%D8%A8%D8%A7%D8%B2/"
-  - name: "انجمن‌های نرم‌افزار آزاد:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A7%D9%86%D8%AC%D9%85%D9%86%D9%87%D8%A7%DB%8C-%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF/"
-  - name: "انقلاب صنعتی چهارم:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A7%D9%86%D9%82%D9%84%D8%A7%D8%A8-%D8%B5%D9%86%D8%B9%D8%AA%DB%8C-%DA%86%D9%87%D8%A7%D8%B1%D9%85/"
-  - name: "برنامه‌نویسی تجاری:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D8%AA%D8%AC%D8%A7%D8%B1%DB%8C/"
-  - name: "برگزاری همایش:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A8%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D9%87%D9%85%D8%A7%DB%8C%D8%B4/"
-  - name: "بکولا:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%A8%DA%A9%D9%88%D9%84%D8%A7/"
-  - name: "تلفن اوبونتو:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%AA%D9%84%D9%81%D9%86-%D8%A7%D9%88%D8%A8%D9%88%D9%86%D8%AA%D9%88/"
-  - name: "تکنولوژی:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%AA%DA%A9%D9%86%D9%88%D9%84%D9%88%DA%98%DB%8C/"
-  - name: "ثبت حقوقی:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%AB%D8%A8%D8%AA-%D8%AD%D9%82%D9%88%D9%82%DB%8C/"
-  - name: "جنبش وال-استریت:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%AC%D9%86%D8%A8%D8%B4-%D9%88%D8%A7%D9%84-%D8%A7%D8%B3%D8%AA%D8%B1%DB%8C%D8%AA/"
-  - name: "خبر:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%AE%D8%A8%D8%B1/"
-  - name: "رمزنگاری:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B1%D9%85%D8%B2%D9%86%DA%AF%D8%A7%D8%B1%DB%8C/"
-  - name: "زیکانف:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B2%DB%8C%DA%A9%D8%A7%D9%86%D9%81/"
-  - name: "ساخت توزیع لینوکس:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B3%D8%A7%D8%AE%D8%AA-%D8%AA%D9%88%D8%B2%DB%8C%D8%B9-%D9%84%DB%8C%D9%86%D9%88%DA%A9%D8%B3/"
-  - name: "سخت‌افزارهای آزاد:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B3%D8%AE%D8%AA%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A2%D8%B2%D8%A7%D8%AF/"
-  - name: "سیستم عامل بِل:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B3%DB%8C%D8%B3%D8%AA%D9%85-%D8%B9%D8%A7%D9%85%D9%84-%D8%A8%D9%90%D9%84/"
-  - name: "شبکه private:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B4%D8%A8%DA%A9%D9%87-private/"
-  - name: "طبقه خلاق:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B7%D8%A8%D9%82%D9%87-%D8%AE%D9%84%D8%A7%D9%82/"
-  - name: "طراحی وب:
-۱"
-    source_url: "https://tehlug.org/topics/%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%88%D8%A8/"
-  - name: "مرکز فن آوری:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%85%D8%B1%DA%A9%D8%B2-%D9%81%D9%86-%D8%A2%D9%88%D8%B1%DB%8C/"
-  - name: "مرکز ملی متن‌باز:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%85%D8%B1%DA%A9%D8%B2-%D9%85%D9%84%DB%8C-%D9%85%D8%AA%D9%86%D8%A8%D8%A7%D8%B2/"
-  - name: "مزایای تجارت الکترونیک با وردپرس:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%85%D8%B2%D8%A7%DB%8C%D8%A7%DB%8C-%D8%AA%D8%AC%D8%A7%D8%B1%D8%AA-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9-%D8%A8%D8%A7-%D9%88%D8%B1%D8%AF%D9%BE%D8%B1%D8%B3/"
-  - name: "مقاله علمی:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%85%D9%82%D8%A7%D9%84%D9%87-%D8%B9%D9%84%D9%85%DB%8C/"
-  - name: "مهاجرت:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%85%D9%87%D8%A7%D8%AC%D8%B1%D8%AA/"
-  - name: "مهندسی اجتماعی:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%85%D9%87%D9%86%D8%AF%D8%B3%DB%8C-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9%DB%8C/"
-  - name: "نرم افزار آزاد:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%86%D8%B1%D9%85-%D8%A7%D9%81%D8%B2%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF/"
-  - name: "نرم‌افزارهای موبایل:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%86%D8%B1%D9%85%D8%A7%D9%81%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D9%88%D8%A8%D8%A7%DB%8C%D9%84/"
-  - name: "پارسیکس:
-۱"
-    source_url: "https://tehlug.org/topics/%D9%BE%D8%A7%D8%B1%D8%B3%DB%8C%DA%A9%D8%B3/"
-  - name: "چگونه برنامه‌نویسی کنیم:
-۱"
-    source_url: "https://tehlug.org/topics/%DA%86%DA%AF%D9%88%D9%86%D9%87-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DA%A9%D9%86%DB%8C%D9%85/"
-  - name: "کار گروه:
-۱"
-    source_url: "https://tehlug.org/topics/%DA%A9%D8%A7%D8%B1-%DA%AF%D8%B1%D9%88%D9%87/"
-  - name: "کسب درآمد:
-۱"
-    source_url: "https://tehlug.org/topics/%DA%A9%D8%B3%D8%A8-%D8%AF%D8%B1%D8%A2%D9%85%D8%AF/"
-  - name: "کسب و کار:
-۱"
-    source_url: "https://tehlug.org/topics/%DA%A9%D8%B3%D8%A8-%D9%88-%DA%A9%D8%A7%D8%B1/"
-  - name: "کمک نظام صنفی:
-۱"
-    source_url: "https://tehlug.org/topics/%DA%A9%D9%85%DA%A9-%D9%86%D8%B8%D8%A7%D9%85-%D8%B5%D9%86%D9%81%DB%8C/"
-  - name: "گام‌های نخست آزادی:
-۱"
-    source_url: "https://tehlug.org/topics/%DA%AF%D8%A7%D9%85%D9%87%D8%A7%DB%8C-%D9%86%D8%AE%D8%B3%D8%AA-%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C/"
+  - name: "اخبار"
+    count: 16
+    events:
+      - slug: "175"
+        title: "جلسه ۱۷۵"
+        date: "۱۳۹۲-۴-۴"
+      - slug: "174"
+        title: "جلسه ۱۷۴"
+        date: "۱۳۹۲-۳-۲۱"
+      - slug: "173"
+        title: "جلسه ۱۷۳"
+        date: "۱۳۹۲-۲-۳۱"
+      - slug: "171"
+        title: "جلسه ۱۷۱"
+        date: "۱۳۹۲-۲-۳"
+      - slug: "169"
+        title: "جلسه ۱۶۹"
+        date: "۱۳۹۱-۱۲-۲۲"
+      - slug: "166"
+        title: "جلسه ۱۶۶"
+        date: "۱۳۹۱-۱۱-۱۱"
+      - slug: "164"
+        title: "جلسه ۱۶۴"
+        date: "۱۳۹۱-۱۰-۱۲"
+      - slug: "147"
+        title: "جلسه ۱۴۷"
+        date: "۱۳۹۰-۸-۱۰"
+      - slug: "146"
+        title: "جلسه ۱۴۶"
+        date: "۱۳۹۰-۷-۲۶"
+      - slug: "145"
+        title: "جلسه ۱۴۵"
+        date: "۱۳۹۰-۷-۱۲"
+      - slug: "144"
+        title: "جلسه ۱۴۴"
+        date: "۱۳۹۰-۶-۲۹"
+      - slug: "143"
+        title: "جلسه ۱۴۳"
+        date: "۱۳۹۰-۶-۱۵"
+      - slug: "138"
+        title: "جلسه ۱۳۸"
+        date: "۱۳۹۰-۳-۳"
+      - slug: "133"
+        title: "جلسه ۱۳۳"
+        date: "۱۳۸۹-۱۱-۲۶"
+      - slug: "125"
+        title: "جلسه ۱۲۵"
+        date: "۱۳۸۹-۵-۶"
+      - slug: "124"
+        title: "جلسه ۱۲۴"
+        date: "۱۳۸۹-۴-۲۳"
+  - name: "هماهنگی جلسات"
+    count: 13
+    events:
+      - slug: "262"
+        title: "جلسه ۲۶۲"
+        date: "۱۳۹۸-۱۱-۲۴"
+      - slug: "255"
+        title: "جلسه ۲۵۵"
+        date: "۱۳۹۸-۴-۲۰"
+      - slug: "251"
+        title: "جلسه ۲۵۱"
+        date: "۱۳۹۷-۱۲-۲۳"
+      - slug: "209"
+        title: "جلسه ۲۰۹"
+        date: "۱۳۹۳-۱۱-۸"
+      - slug: "194"
+        title: "جلسه ۱۹۴"
+        date: "۱۳۹۳-۱-۱۹"
+      - slug: "184"
+        title: "جلسه ۱۸۴"
+        date: "۱۳۹۲-۸-۷"
+      - slug: "166"
+        title: "جلسه ۱۶۶"
+        date: "۱۳۹۱-۱۱-۱۱"
+      - slug: "157"
+        title: "جلسه ۱۵۷"
+        date: "۱۳۹۱-۷-۶"
+      - slug: "142"
+        title: "جلسه ۱۴۲"
+        date: "۱۳۹۰-۶-۱"
+      - slug: "135"
+        title: "جلسه ۱۳۵"
+        date: "۱۳۹۰-۱-۲۳"
+      - slug: "133"
+        title: "جلسه ۱۳۳"
+        date: "۱۳۸۹-۱۱-۲۶"
+      - slug: "123"
+        title: "جلسه ۱۲۳"
+        date: "۱۳۸۹-۴-۹"
+      - slug: "100"
+        title: "جلسه ۱۰۰"
+        date: "۱۳۸۶-۸-۲"
+  - name: "نرم‌افزار آزاد"
+    count: 12
+    events:
+      - slug: "264"
+        title: "جلسه ۲۶۴"
+        date: "۱۴۰۱-۳-۲۶"
+      - slug: "259"
+        title: "جلسه ۲۵۹"
+        date: "۱۳۹۸-۸-۳۰"
+      - slug: "203"
+        title: "جلسه ۲۰۳"
+        date: "۱۳۹۳-۶-۲۴"
+      - slug: "189"
+        title: "جلسه ۱۸۹"
+        date: "۱۳۹۲-۱۰-۱۷"
+      - slug: "174"
+        title: "جلسه ۱۷۴"
+        date: "۱۳۹۲-۳-۲۱"
+      - slug: "172"
+        title: "جلسه ۱۷۲"
+        date: "۱۳۹۲-۲-۱۷"
+      - slug: "168"
+        title: "جلسه ۱۶۸"
+        date: "۱۳۹۱-۱۲-۸"
+      - slug: "163"
+        title: "جلسه ۱۶۳"
+        date: "۱۳۹۱-۹-۲۸"
+      - slug: "148"
+        title: "جلسه ۱۴۸"
+        date: "۱۳۹۰-۹-۲۲"
+      - slug: "135"
+        title: "جلسه ۱۳۵"
+        date: "۱۳۹۰-۱-۲۳"
+      - slug: "125"
+        title: "جلسه ۱۲۵"
+        date: "۱۳۸۹-۵-۶"
+      - slug: "124"
+        title: "جلسه ۱۲۴"
+        date: "۱۳۸۹-۴-۲۳"
+  - name: "Python"
+    count: 9
+    events:
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+      - slug: "274"
+        title: "جلسه ۲۷۴"
+        date: "۱۴۰۳-۰۵-۱۱"
+      - slug: "272"
+        title: "جلسه ۲۷۲"
+        date: "۱۴۰۲-۱۱-۲۶"
+      - slug: "269"
+        title: "جلسه ۲۶۹"
+        date: "۱۴۰۲-۰۴-۰۶"
+      - slug: "241"
+        title: "جلسه ۲۴۱"
+        date: "۱۳۹۶-۱۲-۱۶"
+      - slug: "222"
+        title: "جلسه ۲۲۲"
+        date: "۱۳۹۴-۱۲-۲۰"
+      - slug: "203"
+        title: "جلسه ۲۰۳"
+        date: "۱۳۹۳-۶-۲۴"
+      - slug: "182"
+        title: "جلسه ۱۸۲"
+        date: "۱۳۹۲-۷-۹"
+  - name: "مهندسی نرم‌افزار"
+    count: 6
+    events:
+      - slug: "270"
+        title: "جلسه ۲۷۰"
+        date: "۱۴۰۲-۰۵-۱۰"
+      - slug: "236"
+        title: "جلسه ۲۳۶"
+        date: "۱۳۹۶-۶-۱۶"
+      - slug: "235"
+        title: "جلسه ۲۳۵"
+        date: "۱۳۹۶-۵-۱۲"
+      - slug: "234"
+        title: "جلسه ۲۳۴"
+        date: "۱۳۹۶-۴-۱۵"
+      - slug: "233"
+        title: "جلسه ۲۳۳"
+        date: "۱۳۹۶-۳-۱۱"
+      - slug: "231"
+        title: "جلسه ۲۳۱"
+        date: "۱۳۹۵-۱۲-۱۹"
+  - name: "js"
+    count: 5
+    events:
+      - slug: "225"
+        title: "جلسه ۲۲۵"
+        date: "۱۳۹۵-۶-۲۵"
+      - slug: "221"
+        title: "جلسه ۲۲۱"
+        date: "۱۳۹۴-۱۰-۳"
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+      - slug: "209"
+        title: "جلسه ۲۰۹"
+        date: "۱۳۹۳-۱۱-۸"
+      - slug: "159"
+        title: "جلسه ۱۵۹"
+        date: "۱۳۹۱-۸-۲"
+  - name: "DevOps"
+    count: 5
+    events:
+      - slug: "264"
+        title: "جلسه ۲۶۴"
+        date: "۱۴۰۱-۳-۲۶"
+      - slug: "263"
+        title: "جلسه ۲۶۳"
+        date: "۱۳۹۹-۲-۴"
+      - slug: "255"
+        title: "جلسه ۲۵۵"
+        date: "۱۳۹۸-۴-۲۰"
+      - slug: "231"
+        title: "جلسه ۲۳۱"
+        date: "۱۳۹۵-۱۲-۱۹"
+      - slug: "221"
+        title: "جلسه ۲۲۱"
+        date: "۱۳۹۴-۱۰-۳"
+  - name: "Version control"
+    count: 4
+    events:
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+      - slug: "207"
+        title: "جلسه ۲۰۷"
+        date: "۱۳۹۳-۹-۳"
+      - slug: "171"
+        title: "جلسه ۱۷۱"
+        date: "۱۳۹۲-۲-۳"
+      - slug: "156"
+        title: "جلسه ۱۵۶"
+        date: "۱۳۹۱-۵-۱۸"
+  - name: "حقوقی"
+    count: 4
+    events:
+      - slug: "199"
+        title: "جلسه ۱۹۹"
+        date: "۱۳۹۳-۳-۲۷"
+      - slug: "197"
+        title: "جلسه ۱۹۷"
+        date: "۱۳۹۳-۲-۳۰"
+      - slug: "192"
+        title: "جلسه ۱۹۲"
+        date: "۱۳۹۲-۱۱-۲۹"
+      - slug: "191"
+        title: "جلسه ۱۹۱"
+        date: "۱۳۹۲-۱۱-۱۵"
+  - name: "Kubernetes"
+    count: 4
+    events:
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+      - slug: "269"
+        title: "جلسه ۲۶۹"
+        date: "۱۴۰۲-۰۴-۰۶"
+      - slug: "259"
+        title: "جلسه ۲۵۹"
+        date: "۱۳۹۸-۸-۳۰"
+      - slug: "234"
+        title: "جلسه ۲۳۴"
+        date: "۱۳۹۶-۴-۱۵"
+  - name: "Linux"
+    count: 4
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+      - slug: "273"
+        title: "جلسه ۲۷۳"
+        date: "۱۴۰۳-۰۲-۲۵"
+      - slug: "272"
+        title: "جلسه ۲۷۲"
+        date: "۱۴۰۲-۱۱-۲۶"
+  - name: "Kernel"
+    count: 4
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+      - slug: "274"
+        title: "جلسه ۲۷۴"
+        date: "۱۴۰۳-۰۵-۱۱"
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+      - slug: "142"
+        title: "جلسه ۱۴۲"
+        date: "۱۳۹۰-۶-۱"
+  - name: "برنامه نویسی"
+    count: 3
+    events:
+      - slug: "119"
+        title: "جلسه ۱۱۹"
+        date: "۱۳۸۷-۶-۶"
+      - slug: "108"
+        title: "جلسه ۱۰۸"
+        date: "۱۳۸۶-۱۱-۲۴"
+      - slug: "106"
+        title: "جلسه ۱۰۶"
+        date: "۱۳۸۶-۱۰-۲۶"
+  - name: "سلام دنیا"
+    count: 3
+    events:
+      - slug: "208"
+        title: "جلسه ۲۰۸"
+        date: "۱۳۹۳-۹-۱۷"
+      - slug: "196"
+        title: "جلسه ۱۹۶"
+        date: "۱۳۹۳-۲-۱۶"
+      - slug: "190"
+        title: "جلسه ۱۹۰"
+        date: "۱۳۹۲-۱۱-۱"
+  - name: "ایران تاکس"
+    count: 3
+    events:
+      - slug: "162"
+        title: "جلسه ۱۶۲"
+        date: "۱۳۹۱-۹-۱۴"
+      - slug: "161"
+        title: "جلسه ۱۶۱"
+        date: "۱۳۹۱-۸-۳۰"
+      - slug: "160"
+        title: "جلسه ۱۶۰"
+        date: "۱۳۹۱-۸-۱۶"
+  - name: "API"
+    count: 3
+    events:
+      - slug: "277"
+        title: "جلسه ۲۷۷"
+        date: "۱۴۰۳-۱۱-۱۱"
+      - slug: "230"
+        title: "جلسه ۲۳۰"
+        date: "۱۳۹۵-۱۱-۲۱"
+      - slug: "189"
+        title: "جلسه ۱۸۹"
+        date: "۱۳۹۲-۱۰-۱۷"
+  - name: "امنیت"
+    count: 3
+    events:
+      - slug: "230"
+        title: "جلسه ۲۳۰"
+        date: "۱۳۹۵-۱۱-۲۱"
+      - slug: "193"
+        title: "جلسه ۱۹۳"
+        date: "۱۳۹۲-۱۲-۱۳"
+      - slug: "186"
+        title: "جلسه ۱۸۶"
+        date: "۱۳۹۲-۹-۵"
+  - name: "اساسنامه"
+    count: 3
+    events:
+      - slug: "118"
+        title: "جلسه ۱۱۸"
+        date: "۱۳۸۷-۵-۱۶"
+      - slug: "117"
+        title: "جلسه ۱۱۷"
+        date: "۱۳۸۷-۵-۱۶"
+      - slug: "115"
+        title: "جلسه ۱۱۵"
+        date: "۱۳۸۷-۵-۲"
+  - name: "Go"
+    count: 3
+    events:
+      - slug: "272"
+        title: "جلسه ۲۷۲"
+        date: "۱۴۰۲-۱۱-۲۶"
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+      - slug: "213"
+        title: "جلسه ۲۱۳"
+        date: "۱۳۹۴-۲-۹"
+  - name: "News"
+    count: 3
+    events:
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+      - slug: "274"
+        title: "جلسه ۲۷۴"
+        date: "۱۴۰۳-۰۵-۱۱"
+  - name: "دورهمی"
+    count: 2
+    events:
+      - slug: "268"
+        title: "جلسه ۲۶۸"
+        date: "۱۴۰۲-۰۳-۰۴"
+      - slug: "267"
+        title: "جلسه ۲۶۷"
+        date: "۱۴۰۱-۱۲-۱۶"
+  - name: "Android"
+    count: 2
+    events:
+      - slug: "228"
+        title: "جلسه ۲۲۸"
+        date: "۱۳۹۵-۹-۱۸"
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "پتنت"
+    count: 2
+    events:
+      - slug: "180"
+        title: "جلسه ۱۸۰"
+        date: "۱۳۹۲-۶-۱۲"
+      - slug: "179"
+        title: "جلسه ۱۷۹"
+        date: "۱۳۹۲-۵-۲۹"
+  - name: "Scala"
+    count: 2
+    events:
+      - slug: "229"
+        title: "جلسه ۲۲۹"
+        date: "۱۳۹۵-۱۰-۳۰"
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "Log"
+    count: 2
+    events:
+      - slug: "230"
+        title: "جلسه ۲۳۰"
+        date: "۱۳۹۵-۱۱-۲۱"
+      - slug: "229"
+        title: "جلسه ۲۲۹"
+        date: "۱۳۹۵-۱۰-۳۰"
+  - name: "Ruby"
+    count: 2
+    events:
+      - slug: "262"
+        title: "جلسه ۲۶۲"
+        date: "۱۳۹۸-۱۱-۲۴"
+      - slug: "232"
+        title: "جلسه ۲۳۲"
+        date: "۱۳۹۶-۲-۲۱"
+  - name: "Akka"
+    count: 2
+    events:
+      - slug: "244"
+        title: "جلسه ۲۴۴"
+        date: "۱۳۹۷-۴-۲۸"
+      - slug: "225"
+        title: "جلسه ۲۲۵"
+        date: "۱۳۹۵-۶-۲۵"
+  - name: "Compiler"
+    count: 2
+    events:
+      - slug: "277"
+        title: "جلسه ۲۷۷"
+        date: "۱۴۰۳-۱۱-۱۱"
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+  - name: "CI/CD"
+    count: 2
+    events:
+      - slug: "278"
+        title: "جلسه ۲۷۸"
+        date: "۱۴۰۳-۱۲-۰۹"
+      - slug: "237"
+        title: "جلسه ۲۳۷"
+        date: "۱۳۹۶-۷-۱۳"
+  - name: "رفع اشکال"
+    count: 2
+    events:
+      - slug: "246"
+        title: "جلسه ۲۴۶"
+        date: "۱۳۹۷-۶-۲۲"
+      - slug: "245"
+        title: "جلسه ۲۴۵"
+        date: "۱۳۹۷-۵-۲۵"
+  - name: "Cloud"
+    count: 2
+    events:
+      - slug: "280"
+        title: "جلسه ۲۸۰"
+        date: "۱۴۰۴-۰۹-۰۷"
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+  - name: "Rust"
+    count: 2
+    events:
+      - slug: "280"
+        title: "جلسه ۲۸۰"
+        date: "۱۴۰۴-۰۹-۰۷"
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+  - name: "Internationalization/Localization"
+    count: 2
+    events:
+      - slug: "184"
+        title: "جلسه ۱۸۴"
+        date: "۱۳۹۲-۸-۷"
+      - slug: "140"
+        title: "جلسه ۱۴۰"
+        date: "۱۳۹۰-۳-۳۱"
+  - name: "Font"
+    count: 2
+    events:
+      - slug: "220"
+        title: "جلسه ۲۲۰"
+        date: "۱۳۹۴-۶-۱۹"
+      - slug: "207"
+        title: "جلسه ۲۰۷"
+        date: "۱۳۹۳-۹-۳"
+  - name: "تولید محتوا"
+    count: 2
+    events:
+      - slug: "213"
+        title: "جلسه ۲۱۳"
+        date: "۱۳۹۴-۲-۹"
+      - slug: "212"
+        title: "جلسه ۲۱۲"
+        date: "۱۳۹۴-۱-۲۶"
+  - name: "UEFI"
+    count: 2
+    events:
+      - slug: "169"
+        title: "جلسه ۱۶۹"
+        date: "۱۳۹۱-۱۲-۲۲"
+      - slug: "165"
+        title: "جلسه ۱۶۵"
+        date: "۱۳۹۱-۱۰-۲۶"
+  - name: "Gnome"
+    count: 2
+    events:
+      - slug: "278"
+        title: "جلسه ۲۷۸"
+        date: "۱۴۰۳-۱۲-۰۹"
+      - slug: "102"
+        title: "جلسه ۱۰۲"
+        date: "۱۳۸۶-۸-۳۰"
+  - name: "Event Driven"
+    count: 2
+    events:
+      - slug: "172"
+        title: "جلسه ۱۷۲"
+        date: "۱۳۹۲-۲-۱۷"
+      - slug: "170"
+        title: "جلسه ۱۷۰"
+        date: "۱۳۹۲-۱-۲۰"
+  - name: "Fedora"
+    count: 2
+    events:
+      - slug: "166"
+        title: "جلسه ۱۶۶"
+        date: "۱۳۹۱-۱۱-۱۱"
+      - slug: "137"
+        title: "جلسه ۱۳۷"
+        date: "۱۳۹۰-۲-۲۰"
+  - name: "Secure Coding"
+    count: 2
+    events:
+      - slug: "227"
+        title: "جلسه ۲۲۷"
+        date: "۱۳۹۵-۸-۲۰"
+      - slug: "226"
+        title: "جلسه ۲۲۶"
+        date: "۱۳۹۵-۷-۱۵"
+  - name: "Gnu/Linux"
+    count: 2
+    events:
+      - slug: "173"
+        title: "جلسه ۱۷۳"
+        date: "۱۳۹۲-۲-۳۱"
+      - slug: "161"
+        title: "جلسه ۱۶۱"
+        date: "۱۳۹۱-۸-۳۰"
+  - name: "کارگاه نصب"
+    count: 2
+    events:
+      - slug: "264"
+        title: "جلسه ۲۶۴"
+        date: "۱۴۰۱-۳-۲۶"
+      - slug: "122"
+        title: "جلسه ۱۲۲"
+        date: "۱۳۸۷-۱۰-۸"
+  - name: "استارتاپ"
+    count: 2
+    events:
+      - slug: "216"
+        title: "جلسه ۲۱۶"
+        date: "۱۳۹۴-۳-۲۰"
+      - slug: "181"
+        title: "جلسه ۱۸۱"
+        date: "۱۳۹۲-۶-۲۶"
+  - name: "PilotLogic CodeTyphon"
+    count: 1
+    events:
+      - slug: "240"
+        title: "جلسه ۲۴۰"
+        date: "۱۳۹۶-۱۱-۲۵"
+  - name: "Embedded Systems"
+    count: 1
+    events:
+      - slug: "240"
+        title: "جلسه ۲۴۰"
+        date: "۱۳۹۶-۱۱-۲۵"
+  - name: "Yii2"
+    count: 1
+    events:
+      - slug: "253"
+        title: "جلسه ۲۵۳"
+        date: "۱۳۹۸-۲-۲۶"
+  - name: "انجمن‌های نرم‌افزار آزاد"
+    count: 1
+    events:
+      - slug: "261"
+        title: "جلسه ۲۶۱"
+        date: "۱۳۹۸-۱۰-۲۶"
+  - name: "Proxmox"
+    count: 1
+    events:
+      - slug: "228"
+        title: "جلسه ۲۲۸"
+        date: "۱۳۹۵-۹-۱۸"
+  - name: "CDN"
+    count: 1
+    events:
+      - slug: "228"
+        title: "جلسه ۲۲۸"
+        date: "۱۳۹۵-۹-۱۸"
+  - name: "ارائه مطلب"
+    count: 1
+    events:
+      - slug: "206"
+        title: "جلسه ۲۰۶"
+        date: "۱۳۹۳-۸-۱۹"
+  - name: "Chakra"
+    count: 1
+    events:
+      - slug: "146"
+        title: "جلسه ۱۴۶"
+        date: "۱۳۹۰-۷-۲۶"
+  - name: "virtualization"
+    count: 1
+    events:
+      - slug: "179"
+        title: "جلسه ۱۷۹"
+        date: "۱۳۹۲-۵-۲۹"
+  - name: "Startingup"
+    count: 1
+    events:
+      - slug: "238"
+        title: "جلسه ۲۳۸"
+        date: "۱۳۹۶-۹-۹"
+  - name: "Js"
+    count: 1
+    events:
+      - slug: "194"
+        title: "جلسه ۱۹۴"
+        date: "۱۳۹۳-۱-۱۹"
+  - name: "Version Control"
+    count: 1
+    events:
+      - slug: "101"
+        title: "جلسه ۱۰۱"
+        date: "۱۳۸۶-۸-۱۶"
+  - name: "اف‌دروید"
+    count: 1
+    events:
+      - slug: "247"
+        title: "جلسه ۲۴۷"
+        date: "۱۳۹۷-۸-۲۴"
+  - name: "pyreveal"
+    count: 1
+    events:
+      - slug: "271"
+        title: "جلسه ۲۷۱"
+        date: "۱۴۰۲-۰۹-۰۹"
+  - name: "django unicorn"
+    count: 1
+    events:
+      - slug: "271"
+        title: "جلسه ۲۷۱"
+        date: "۱۴۰۲-۰۹-۰۹"
+  - name: "XP"
+    count: 1
+    events:
+      - slug: "196"
+        title: "جلسه ۱۹۶"
+        date: "۱۳۹۳-۲-۱۶"
+  - name: "چگونه برنامه‌نویسی کنیم"
+    count: 1
+    events:
+      - slug: "229"
+        title: "جلسه ۲۲۹"
+        date: "۱۳۹۵-۱۰-۳۰"
+  - name: "Scrapy"
+    count: 1
+    events:
+      - slug: "229"
+        title: "جلسه ۲۲۹"
+        date: "۱۳۹۵-۱۰-۳۰"
+  - name: "پارسیکس"
+    count: 1
+    events:
+      - slug: "107"
+        title: "جلسه ۱۰۷"
+        date: "۱۳۸۶-۱۱-۱۰"
+  - name: "Erlang"
+    count: 1
+    events:
+      - slug: "192"
+        title: "جلسه ۱۹۲"
+        date: "۱۳۹۲-۱۱-۲۹"
+  - name: "مهاجرت"
+    count: 1
+    events:
+      - slug: "182"
+        title: "جلسه ۱۸۲"
+        date: "۱۳۹۲-۷-۹"
+  - name: "ZSH"
+    count: 1
+    events:
+      - slug: "263"
+        title: "جلسه ۲۶۳"
+        date: "۱۳۹۹-۲-۴"
+  - name: "سیستم عامل بِل"
+    count: 1
+    events:
+      - slug: "256"
+        title: "جلسه ۲۵۶"
+        date: "۱۳۹۸-۵-۲۴"
+  - name: "Serverless"
+    count: 1
+    events:
+      - slug: "256"
+        title: "جلسه ۲۵۶"
+        date: "۱۳۹۸-۵-۲۴"
+  - name: "Coding"
+    count: 1
+    events:
+      - slug: "162"
+        title: "جلسه ۱۶۲"
+        date: "۱۳۹۱-۹-۱۴"
+  - name: "مرکز ملی متن‌باز"
+    count: 1
+    events:
+      - slug: "162"
+        title: "جلسه ۱۶۲"
+        date: "۱۳۹۱-۹-۱۴"
+  - name: "AWS"
+    count: 1
+    events:
+      - slug: "223"
+        title: "جلسه ۲۲۳"
+        date: "۱۳۹۵-۴-۲۴"
+  - name: "Product Management"
+    count: 1
+    events:
+      - slug: "223"
+        title: "جلسه ۲۲۳"
+        date: "۱۳۹۵-۴-۲۴"
+  - name: "رمزنگاری"
+    count: 1
+    events:
+      - slug: "243"
+        title: "جلسه ۲۴۳"
+        date: "۱۳۹۷-۳-۳۱"
+  - name: "تلفن اوبونتو"
+    count: 1
+    events:
+      - slug: "211"
+        title: "جلسه ۲۱۱"
+        date: "۱۳۹۳-۱۲-۱۳"
+  - name: "کمک نظام صنفی"
+    count: 1
+    events:
+      - slug: "211"
+        title: "جلسه ۲۱۱"
+        date: "۱۳۹۳-۱۲-۱۳"
+  - name: "Functional Programming"
+    count: 1
+    events:
+      - slug: "190"
+        title: "جلسه ۱۹۰"
+        date: "۱۳۹۲-۱۱-۱"
+  - name: "ubuntu touch"
+    count: 1
+    events:
+      - slug: "186"
+        title: "جلسه ۱۸۶"
+        date: "۱۳۹۲-۹-۵"
+  - name: "Docker"
+    count: 1
+    events:
+      - slug: "195"
+        title: "جلسه ۱۹۵"
+        date: "۱۳۹۳-۲-۲"
+  - name: "Heartbleed"
+    count: 1
+    events:
+      - slug: "195"
+        title: "جلسه ۱۹۵"
+        date: "۱۳۹۳-۲-۲"
+  - name: "آینده کسب و کارهای سیستم های متن باز"
+    count: 1
+    events:
+      - slug: "257"
+        title: "جلسه ۲۵۷"
+        date: "۱۳۹۸-۶-۲۸"
+  - name: "ساخت توزیع لینوکس"
+    count: 1
+    events:
+      - slug: "257"
+        title: "جلسه ۲۵۷"
+        date: "۱۳۹۸-۶-۲۸"
+  - name: "Raspberry Pi"
+    count: 1
+    events:
+      - slug: "244"
+        title: "جلسه ۲۴۴"
+        date: "۱۳۹۷-۴-۲۸"
+  - name: "AI Agent"
+    count: 1
+    events:
+      - slug: "277"
+        title: "جلسه ۲۷۷"
+        date: "۱۴۰۳-۱۱-۱۱"
+  - name: "WASM"
+    count: 1
+    events:
+      - slug: "277"
+        title: "جلسه ۲۷۷"
+        date: "۱۴۰۳-۱۱-۱۱"
+  - name: "Memory"
+    count: 1
+    events:
+      - slug: "277"
+        title: "جلسه ۲۷۷"
+        date: "۱۴۰۳-۱۱-۱۱"
+  - name: "MLOps"
+    count: 1
+    events:
+      - slug: "277"
+        title: "جلسه ۲۷۷"
+        date: "۱۴۰۳-۱۱-۱۱"
+  - name: "It's your legacy"
+    count: 1
+    events:
+      - slug: "237"
+        title: "جلسه ۲۳۷"
+        date: "۱۳۹۶-۷-۱۳"
+  - name: "طبقه خلاق"
+    count: 1
+    events:
+      - slug: "237"
+        title: "جلسه ۲۳۷"
+        date: "۱۳۹۶-۷-۱۳"
+  - name: "BSD"
+    count: 1
+    events:
+      - slug: "280"
+        title: "جلسه ۲۸۰"
+        date: "۱۴۰۴-۰۹-۰۷"
+  - name: "NPM"
+    count: 1
+    events:
+      - slug: "280"
+        title: "جلسه ۲۸۰"
+        date: "۱۴۰۴-۰۹-۰۷"
+  - name: "Devops"
+    count: 1
+    events:
+      - slug: "280"
+        title: "جلسه ۲۸۰"
+        date: "۱۴۰۴-۰۹-۰۷"
+  - name: "برگزاری همایش"
+    count: 1
+    events:
+      - slug: "144"
+        title: "جلسه ۱۴۴"
+        date: "۱۳۹۰-۶-۲۹"
+  - name: "ایران-تاکس"
+    count: 1
+    events:
+      - slug: "140"
+        title: "جلسه ۱۴۰"
+        date: "۱۳۹۰-۳-۳۱"
+  - name: "Web3"
+    count: 1
+    events:
+      - slug: "273"
+        title: "جلسه ۲۷۳"
+        date: "۱۴۰۳-۰۲-۲۵"
+  - name: "AI"
+    count: 1
+    events:
+      - slug: "273"
+        title: "جلسه ۲۷۳"
+        date: "۱۴۰۳-۰۲-۲۵"
+  - name: "آزادی‌های دیجیتال"
+    count: 1
+    events:
+      - slug: "266"
+        title: "جلسه ۲۶۶"
+        date: "۱۴۰۱-۹-۸"
+  - name: "Django"
+    count: 1
+    events:
+      - slug: "269"
+        title: "جلسه ۲۶۹"
+        date: "۱۴۰۲-۰۴-۰۶"
+  - name: "مقاله علمی"
+    count: 1
+    events:
+      - slug: "199"
+        title: "جلسه ۱۹۹"
+        date: "۱۳۹۳-۳-۲۷"
+  - name: "TDD"
+    count: 1
+    events:
+      - slug: "187"
+        title: "جلسه ۱۸۷"
+        date: "۱۳۹۲-۹-۱۹"
+  - name: "Semantic Web"
+    count: 1
+    events:
+      - slug: "168"
+        title: "جلسه ۱۶۸"
+        date: "۱۳۹۱-۱۲-۸"
+  - name: "مهندسی اجتماعی"
+    count: 1
+    events:
+      - slug: "210"
+        title: "جلسه ۲۱۰"
+        date: "۱۳۹۳-۱۱-۲۹"
+  - name: "CoreOS"
+    count: 1
+    events:
+      - slug: "198"
+        title: "جلسه ۱۹۸"
+        date: "۱۳۹۳-۳-۱۳"
+  - name: "نرم افزار آزاد"
+    count: 1
+    events:
+      - slug: "198"
+        title: "جلسه ۱۹۸"
+        date: "۱۳۹۳-۳-۱۳"
+  - name: "PHP"
+    count: 1
+    events:
+      - slug: "222"
+        title: "جلسه ۲۲۲"
+        date: "۱۳۹۴-۱۲-۲۰"
+  - name: "شبکه Private"
+    count: 1
+    events:
+      - slug: "260"
+        title: "جلسه ۲۶۰"
+        date: "۱۳۹۸-۹-۲۸"
+  - name: "ثبت حقوقی"
+    count: 1
+    events:
+      - slug: "260"
+        title: "جلسه ۲۶۰"
+        date: "۱۳۹۸-۹-۲۸"
+  - name: "مزایای تجارت الکترونیک با وردپرس"
+    count: 1
+    events:
+      - slug: "258"
+        title: "جلسه ۲۵۸"
+        date: "۱۳۹۸-۷-۵"
+  - name: "بکولا"
+    count: 1
+    events:
+      - slug: "258"
+        title: "جلسه ۲۵۸"
+        date: "۱۳۹۸-۷-۵"
+  - name: "kubernetes"
+    count: 1
+    events:
+      - slug: "239"
+        title: "جلسه ۲۳۹"
+        date: "۱۳۹۶-۱۰-۲۱"
+  - name: "shellcode"
+    count: 1
+    events:
+      - slug: "175"
+        title: "جلسه ۱۷۵"
+        date: "۱۳۹۲-۴-۴"
+  - name: "تکنولوژی"
+    count: 1
+    events:
+      - slug: "175"
+        title: "جلسه ۱۷۵"
+        date: "۱۳۹۲-۴-۴"
+  - name: "DB"
+    count: 1
+    events:
+      - slug: "212"
+        title: "جلسه ۲۱۲"
+        date: "۱۳۹۴-۱-۲۶"
+  - name: "physics"
+    count: 1
+    events:
+      - slug: "232"
+        title: "جلسه ۲۳۲"
+        date: "۱۳۹۶-۲-۲۱"
+  - name: "Nginx"
+    count: 1
+    events:
+      - slug: "232"
+        title: "جلسه ۲۳۲"
+        date: "۱۳۹۶-۲-۲۱"
+  - name: "IDS"
+    count: 1
+    events:
+      - slug: "232"
+        title: "جلسه ۲۳۲"
+        date: "۱۳۹۶-۲-۲۱"
+  - name: "udev"
+    count: 1
+    events:
+      - slug: "103"
+        title: "جلسه ۱۰۳"
+        date: "۱۳۸۶-۹-۱۴"
+  - name: "Reactive Manifesto"
+    count: 1
+    events:
+      - slug: "217"
+        title: "جلسه ۲۱۷"
+        date: "۱۳۹۴-۴-۳"
+  - name: "Anonymous Group"
+    count: 1
+    events:
+      - slug: "169"
+        title: "جلسه ۱۶۹"
+        date: "۱۳۹۱-۱۲-۲۲"
+  - name: "Media"
+    count: 1
+    events:
+      - slug: "278"
+        title: "جلسه ۲۷۸"
+        date: "۱۴۰۳-۱۲-۰۹"
+  - name: "Matrix"
+    count: 1
+    events:
+      - slug: "278"
+        title: "جلسه ۲۷۸"
+        date: "۱۴۰۳-۱۲-۰۹"
+  - name: "کسب و کار"
+    count: 1
+    events:
+      - slug: "171"
+        title: "جلسه ۱۷۱"
+        date: "۱۳۹۲-۲-۳"
+  - name: "Emacs"
+    count: 1
+    events:
+      - slug: "158"
+        title: "جلسه ۱۵۸"
+        date: "۱۳۹۱-۷-۱۹"
+  - name: "floydhub"
+    count: 1
+    events:
+      - slug: "236"
+        title: "جلسه ۲۳۶"
+        date: "۱۳۹۶-۶-۱۶"
+  - name: "Postgres"
+    count: 1
+    events:
+      - slug: "236"
+        title: "جلسه ۲۳۶"
+        date: "۱۳۹۶-۶-۱۶"
+  - name: "Release strategy"
+    count: 1
+    events:
+      - slug: "236"
+        title: "جلسه ۲۳۶"
+        date: "۱۳۹۶-۶-۱۶"
+  - name: "سخت‌افزارهای آزاد"
+    count: 1
+    events:
+      - slug: "204"
+        title: "جلسه ۲۰۴"
+        date: "۱۳۹۳-۷-۷"
+  - name: "گام‌های نخست آزادی"
+    count: 1
+    events:
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "Big data"
+    count: 1
+    events:
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "طراحی وب"
+    count: 1
+    events:
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "Create Your Own Language"
+    count: 1
+    events:
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "کسب درآمد"
+    count: 1
+    events:
+      - slug: "219"
+        title: "جلسه ۲۱۹ جشن ۱۰ سالگی لاگ"
+        date: "۱۳۹۴-۵-۱۵"
+  - name: "Bash Scripting"
+    count: 1
+    events:
+      - slug: "180"
+        title: "جلسه ۱۸۰"
+        date: "۱۳۹۲-۶-۱۲"
+  - name: "ownCloud"
+    count: 1
+    events:
+      - slug: "180"
+        title: "جلسه ۱۸۰"
+        date: "۱۳۹۲-۶-۱۲"
+  - name: "Data Grid"
+    count: 1
+    events:
+      - slug: "185"
+        title: "جلسه ۱۸۵"
+        date: "۱۳۹۲-۸-۲۱"
+  - name: "کار گروه"
+    count: 1
+    events:
+      - slug: "185"
+        title: "جلسه ۱۸۵"
+        date: "۱۳۹۲-۸-۲۱"
+  - name: "Freedom"
+    count: 1
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+  - name: "Gaming"
+    count: 1
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+  - name: "Windows"
+    count: 1
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+  - name: "LLM"
+    count: 1
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+  - name: "Quantom"
+    count: 1
+    events:
+      - slug: "279"
+        title: "جلسه ۲۷۹"
+        date: "۱۴۰۴-۰۲-۲۵"
+  - name: "iot"
+    count: 1
+    events:
+      - slug: "205"
+        title: "جلسه ۲۰۵"
+        date: "۱۳۹۳-۷-۲۸"
+  - name: "gnu/linux"
+    count: 1
+    events:
+      - slug: "205"
+        title: "جلسه ۲۰۵"
+        date: "۱۳۹۳-۷-۲۸"
+  - name: "انقلاب صنعتی چهارم"
+    count: 1
+    events:
+      - slug: "254"
+        title: "جلسه ۲۵۴"
+        date: "۱۳۹۸-۳-۳۰"
+  - name: "Bootstrap"
+    count: 1
+    events:
+      - slug: "155"
+        title: "جلسه ۱۵۵"
+        date: "۱۳۹۱-۴-۱۴"
+  - name: "Dns"
+    count: 1
+    events:
+      - slug: "177"
+        title: "جلسه ۱۷۷"
+        date: "۱۳۹۲-۵-۱"
+  - name: "Telegram Bot"
+    count: 1
+    events:
+      - slug: "227"
+        title: "جلسه ۲۲۷"
+        date: "۱۳۹۵-۸-۲۰"
+  - name: "Sinatra"
+    count: 1
+    events:
+      - slug: "227"
+        title: "جلسه ۲۲۷"
+        date: "۱۳۹۵-۸-۲۰"
+  - name: "Electron"
+    count: 1
+    events:
+      - slug: "227"
+        title: "جلسه ۲۲۷"
+        date: "۱۳۹۵-۸-۲۰"
+  - name: "E-commerce"
+    count: 1
+    events:
+      - slug: "157"
+        title: "جلسه ۱۵۷"
+        date: "۱۳۹۱-۷-۶"
+  - name: "Hadoop"
+    count: 1
+    events:
+      - slug: "167"
+        title: "جلسه ۱۶۷"
+        date: "۱۳۹۱-۱۱-۲۴"
+  - name: "Packet Injection"
+    count: 1
+    events:
+      - slug: "167"
+        title: "جلسه ۱۶۷"
+        date: "۱۳۹۱-۱۱-۲۴"
+  - name: "Scalability/Availability/Stability"
+    count: 1
+    events:
+      - slug: "183"
+        title: "جلسه ۱۸۳"
+        date: "۱۳۹۲-۷-۲۳"
+  - name: "KDE"
+    count: 1
+    events:
+      - slug: "100"
+        title: "جلسه ۱۰۰"
+        date: "۱۳۸۶-۸-۲"
+  - name: "Apache"
+    count: 1
+    events:
+      - slug: "203"
+        title: "جلسه ۲۰۳"
+        date: "۱۳۹۳-۶-۲۴"
+  - name: "Social"
+    count: 1
+    events:
+      - slug: "178"
+        title: "جلسه ۱۷۸"
+        date: "۱۳۹۲-۵-۱۵"
+  - name: "Falco"
+    count: 1
+    events:
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+  - name: "K8S"
+    count: 1
+    events:
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+  - name: "Git"
+    count: 1
+    events:
+      - slug: "275"
+        title: "جلسه ۲۷۵"
+        date: "۱۴۰۳-۰۷-۱۹"
+  - name: "خبر"
+    count: 1
+    events:
+      - slug: "165"
+        title: "جلسه ۱۶۵"
+        date: "۱۳۹۱-۱۰-۲۶"
+  - name: "Socket"
+    count: 1
+    events:
+      - slug: "165"
+        title: "جلسه ۱۶۵"
+        date: "۱۳۹۱-۱۰-۲۶"
+  - name: "Qt"
+    count: 1
+    events:
+      - slug: "215"
+        title: "جلسه ۲۱۵"
+        date: "۱۳۹۴-۳-۶"
+  - name: "Copy Right"
+    count: 1
+    events:
+      - slug: "154"
+        title: "جلسه ۱۵۴"
+        date: "۱۳۹۱-۳-۲۴"
+  - name: "Parsidora"
+    count: 1
+    events:
+      - slug: "137"
+        title: "جلسه ۱۳۷"
+        date: "۱۳۹۰-۲-۲۰"
+  - name: "برنامه‌نویسی تجاری"
+    count: 1
+    events:
+      - slug: "137"
+        title: "جلسه ۱۳۷"
+        date: "۱۳۹۰-۲-۲۰"
+  - name: "Node js"
+    count: 1
+    events:
+      - slug: "150"
+        title: "جلسه ۱۵۰"
+        date: "۱۳۹۰-۱۱-۱۸"
+  - name: "Web server"
+    count: 1
+    events:
+      - slug: "134"
+        title: "جلسه ۱۳۴"
+        date: "۱۳۸۹-۱۲-۲۵"
+  - name: "PHP/Curl"
+    count: 1
+    events:
+      - slug: "173"
+        title: "جلسه ۱۷۳"
+        date: "۱۳۹۲-۲-۳۱"
+  - name: "UX"
+    count: 1
+    events:
+      - slug: "201"
+        title: "جلسه ۲۰۱"
+        date: "۱۳۹۳-۴-۱۷"
+  - name: "IRC"
+    count: 1
+    events:
+      - slug: "104"
+        title: "جلسه ۱۰۴"
+        date: "۱۳۸۶-۰۹-۲۸"
+  - name: "جنبش وال-استریت"
+    count: 1
+    events:
+      - slug: "147"
+        title: "جلسه ۱۴۷"
+        date: "۱۳۹۰-۸-۱۰"
+  - name: "Remastersys"
+    count: 1
+    events:
+      - slug: "164"
+        title: "جلسه ۱۶۴"
+        date: "۱۳۹۱-۱۰-۱۲"
+  - name: "Privacy"
+    count: 1
+    events:
+      - slug: "164"
+        title: "جلسه ۱۶۴"
+        date: "۱۳۹۱-۱۰-۱۲"
+  - name: "BitCoin"
+    count: 1
+    events:
+      - slug: "188"
+        title: "جلسه ۱۸۸"
+        date: "۱۳۹۲-۱۰-۳"
+  - name: "libnanomsg"
+    count: 1
+    events:
+      - slug: "224"
+        title: "جلسه ۲۲۴"
+        date: "۱۳۹۵-۵-۲۱"
+  - name: "OpenRISC"
+    count: 1
+    events:
+      - slug: "224"
+        title: "جلسه ۲۲۴"
+        date: "۱۳۹۵-۵-۲۱"
+  - name: "ASP.net core"
+    count: 1
+    events:
+      - slug: "224"
+        title: "جلسه ۲۲۴"
+        date: "۱۳۹۵-۵-۲۱"
+  - name: "Elastix"
+    count: 1
+    events:
+      - slug: "224"
+        title: "جلسه ۲۲۴"
+        date: "۱۳۹۵-۵-۲۱"
+  - name: "Liferay"
+    count: 1
+    events:
+      - slug: "153"
+        title: "جلسه ۱۵۳"
+        date: "۱۳۹۱-۳-۳"
+  - name: "SOC"
+    count: 1
+    events:
+      - slug: "233"
+        title: "جلسه ۲۳۳"
+        date: "۱۳۹۶-۳-۱۱"
+  - name: "ScanQt"
+    count: 1
+    events:
+      - slug: "230"
+        title: "جلسه ۲۳۰"
+        date: "۱۳۹۵-۱۱-۲۱"
+  - name: "Gitlab"
+    count: 1
+    events:
+      - slug: "230"
+        title: "جلسه ۲۳۰"
+        date: "۱۳۹۵-۱۱-۲۱"
+  - name: "APP"
+    count: 1
+    events:
+      - slug: "230"
+        title: "جلسه ۲۳۰"
+        date: "۱۳۹۵-۱۱-۲۱"
+  - name: "Message Oriented Middleware"
+    count: 1
+    events:
+      - slug: "176"
+        title: "جلسه ۱۷۶"
+        date: "۱۳۹۲-۴-۱۸"
+  - name: "Community"
+    count: 1
+    events:
+      - slug: "176"
+        title: "جلسه ۱۷۶"
+        date: "۱۳۹۲-۴-۱۸"
+  - name: "Gimp"
+    count: 1
+    events:
+      - slug: "226"
+        title: "جلسه ۲۲۶"
+        date: "۱۳۹۵-۷-۱۵"
+  - name: "Arduino"
+    count: 1
+    events:
+      - slug: "226"
+        title: "جلسه ۲۲۶"
+        date: "۱۳۹۵-۷-۱۵"
+  - name: "اقتصاد متن باز"
+    count: 1
+    events:
+      - slug: "226"
+        title: "جلسه ۲۲۶"
+        date: "۱۳۹۵-۷-۱۵"
+  - name: "Bitcoin"
+    count: 1
+    events:
+      - slug: "234"
+        title: "جلسه ۲۳۴"
+        date: "۱۳۹۶-۴-۱۵"
+  - name: "Evolution of Linux operating system network"
+    count: 1
+    events:
+      - slug: "234"
+        title: "جلسه ۲۳۴"
+        date: "۱۳۹۶-۴-۱۵"
+  - name: "Joomla"
+    count: 1
+    events:
+      - slug: "151"
+        title: "جلسه ۱۵۱"
+        date: "۱۳۹۱-۱-۲۳"
+  - name: "LXD"
+    count: 1
+    events:
+      - slug: "225"
+        title: "جلسه ۲۲۵"
+        date: "۱۳۹۵-۶-۲۵"
+  - name: "نرم‌افزارهای موبایل"
+    count: 1
+    events:
+      - slug: "225"
+        title: "جلسه ۲۲۵"
+        date: "۱۳۹۵-۶-۲۵"
+  - name: "Bash"
+    count: 1
+    events:
+      - slug: "200"
+        title: "جلسه ۲۰۰"
+        date: "۱۳۹۳-۴-۴"
+  - name: "Buildroot"
+    count: 1
+    events:
+      - slug: "200"
+        title: "جلسه ۲۰۰"
+        date: "۱۳۹۳-۴-۴"
+  - name: "MongoDB"
+    count: 1
+    events:
+      - slug: "200"
+        title: "جلسه ۲۰۰"
+        date: "۱۳۹۳-۴-۴"
+  - name: "vagrant"
+    count: 1
+    events:
+      - slug: "197"
+        title: "جلسه ۱۹۷"
+        date: "۱۳۹۳-۲-۳۰"
+  - name: "BPMS"
+    count: 1
+    events:
+      - slug: "191"
+        title: "جلسه ۱۹۱"
+        date: "۱۳۹۲-۱۱-۱۵"
+  - name: "Data center"
+    count: 1
+    events:
+      - slug: "270"
+        title: "جلسه ۲۷۰"
+        date: "۱۴۰۲-۰۵-۱۰"
+  - name: "Gentoo"
+    count: 1
+    events:
+      - slug: "136"
+        title: "جلسه ۱۳۶"
+        date: "۱۳۹۰-۲-۶"
+  - name: "Wireless"
+    count: 1
+    events:
+      - slug: "143"
+        title: "جلسه ۱۴۳"
+        date: "۱۳۹۰-۶-۱۵"
+  - name: "آموزش آکادمیک"
+    count: 1
+    events:
+      - slug: "193"
+        title: "جلسه ۱۹۳"
+        date: "۱۳۹۲-۱۲-۱۳"
+  - name: "LaTeX"
+    count: 1
+    events:
+      - slug: "149"
+        title: "جلسه ۱۴۹"
+        date: "۱۳۹۰-۱۰-۶"
+  - name: "P2P Currency"
+    count: 1
+    events:
+      - slug: "139"
+        title: "جلسه ۱۳۹"
+        date: "۱۳۹۰-۳-۱۷"
+  - name: "Spam"
+    count: 1
+    events:
+      - slug: "145"
+        title: "جلسه ۱۴۵"
+        date: "۱۳۹۰-۷-۱۲"
+  - name: "Next Cloud"
+    count: 1
+    events:
+      - slug: "248"
+        title: "جلسه ۲۴۸"
+        date: "۱۳۹۷-۹-۲۹"
+  - name: "Internet"
+    count: 1
+    events:
+      - slug: "160"
+        title: "جلسه ۱۶۰"
+        date: "۱۳۹۱-۸-۱۶"
+  - name: "ARM"
+    count: 1
+    events:
+      - slug: "220"
+        title: "جلسه ۲۲۰"
+        date: "۱۳۹۴-۶-۱۹"
+  - name: "Front-end"
+    count: 1
+    events:
+      - slug: "274"
+        title: "جلسه ۲۷۴"
+        date: "۱۴۰۳-۰۵-۱۱"
+  - name: "Drupal"
+    count: 1
+    events:
+      - slug: "152"
+        title: "جلسه ۱۵۲"
+        date: "۱۳۹۱-۲-۱۳"
+  - name: "Svelte"
+    count: 1
+    events:
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+  - name: "Cybersecurity"
+    count: 1
+    events:
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+  - name: "Wagtill"
+    count: 1
+    events:
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+  - name: "NIC"
+    count: 1
+    events:
+      - slug: "276"
+        title: "جلسه ۲۷۶"
+        date: "۱۴۰۳-۰۹-۰۸"
+  - name: "database"
+    count: 1
+    events:
+      - slug: "265"
+        title: "جلسه ۲۶۵"
+        date: "۱۴۰۱-۶-۱۵"
+  - name: "storage"
+    count: 1
+    events:
+      - slug: "265"
+        title: "جلسه ۲۶۵"
+        date: "۱۴۰۱-۶-۱۵"
+  - name: "XMPP"
+    count: 1
+    events:
+      - slug: "202"
+        title: "جلسه ۲۰۲"
+        date: "۱۳۹۳-۶-۱۰"
+  - name: "Janus"
+    count: 1
+    events:
+      - slug: "264"
+        title: "جلسه ۲۶۴"
+        date: "۱۴۰۱-۳-۲۶"
+  - name: "زیکانف"
+    count: 1
+    events:
+      - slug: "174"
+        title: "جلسه ۱۷۴"
+        date: "۱۳۹۲-۳-۲۱"
+  - name: "مرکز فن آوری"
+    count: 1
+    events:
+      - slug: "181"
+        title: "جلسه ۱۸۱"
+        date: "۱۳۹۲-۶-۲۶"

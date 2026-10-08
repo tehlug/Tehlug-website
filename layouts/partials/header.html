@@ -9,9 +9,20 @@
       </div>
       <nav class="site-nav" aria-label="منوی اصلی">
         <input class="site-nav-checkbox" type="checkbox" id="site-nav-toggle">
-        <label class="site-nav-toggle" for="site-nav-toggle"><span></span><span></span><span></span><b>منو</b></label>
+        <label class="site-nav-toggle" for="site-nav-toggle" aria-label="باز و بسته کردن منو">
+          <span></span><span></span><span></span>
+          <b>منو</b>
+        </label>
+        <label class="site-nav-backdrop" for="site-nav-toggle" aria-hidden="true"></label>
         <div class="site-nav-links">
-          <a href="/about/">درباره ما</a><a href="/gallery/">گالری</a><a href="/topics/">موضوعات</a><a href="/speakers/">ارائه‌دهندگان</a><a href="/news/">اخبار</a><a href="/events/">رویدادها</a>
+          <a class="site-nav-home" href="{{ "/" | relURL }}">خانه</a>
+          <a href="{{ "/events/" | relURL }}">رویدادها</a>
+          <a href="{{ "/news/" | relURL }}">اخبار</a>
+          <a href="{{ "/speakers/" | relURL }}">ارائه‌دهندگان</a>
+          <a href="{{ "/topics/" | relURL }}">موضوعات</a>
+          <a href="{{ "/gallery/" | relURL }}">گالری</a>
+          <a href="{{ "/about/" | relURL }}">درباره ما</a>
+          <a class="site-nav-calendar" href="{{ "/calendar/" | relURL }}">تقویم</a>
         </div>
       </nav>
       <a class="header-home active" href="/">تهران‌لاگ</a>

@@ -2,7 +2,6 @@
 title: "بیانیه جمعی از جامعه نرم‌افزار آزاد ایران در خصوص بازداشت‌ها و سرکوب اخیر"
 url: "/news/statementforiran/"
 date_text: "۱۴۰۱-۷-۱۹"
-source_url: "https://tehlug.org/news/statementforiran/"
 ---
 
 روزهای تلخی که در ایران سپری میکنیم هرگز از خاطرمان نخواهد رفت.
